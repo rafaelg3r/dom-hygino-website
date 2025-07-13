@@ -1,0 +1,95 @@
+@import url("./style.css");
+
+header {
+  z-index: 999;
+  position: fixed;
+  background-color: var(--semi-black);
+  color: var(--semi-white);
+  width: 100%;
+  padding: 1rem 12rem;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.2rem 3rem black;
+
+  .logo {
+    width: 9.9rem;
+    margin-right: 5rem;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    .instagram-icon{
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      &:hover {
+        transform: scale(0.9);
+      }
+    }
+
+    a {
+      font-variant: small-caps;
+      text-decoration: none;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      transform: translateY(-3px);
+    }
+
+    a::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: var(--pink-red);
+      transform: scaleY(0);
+      transform-origin: bottom;
+      transition: transform 0.3s ease;
+    }
+
+    a:hover::before {
+      transform: scaleY(1);
+    }
+
+    .left-nav,
+    .right-nav {
+      font-family: var(--barlow-font);
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 3rem;
+      font-size: 2rem;
+      /* text-transform: uppercase; */
+      font-weight: 600;
+      letter-spacing: 3.2px;
+    }
+
+    .nav-products-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    button {
+      background-color: var(--pink-gray);
+      padding: 1rem 2rem;
+      font-size: 1.8rem;
+      letter-spacing: 0.32rem;
+      font-variant: small-caps;
+      border-radius: 0.4rem;
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}

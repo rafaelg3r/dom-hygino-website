@@ -1,0 +1,46 @@
+@import url("./header.css");
+@import url("./main.css");
+@import url("./classes.css");
+
+@font-face {
+  font-family: "Roadstore";
+  src: url(../font/Roadstore.otf) format("otf"),
+    url(../font/Roadstore.ttf) format("ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+:root {
+  --semi-black: #0a0a0a;
+  --semi-white: #f5e1c8;
+  --pink-gray: #2c2125;
+  --pink-red: #e53344;
+
+  --roadstore-font: "Roadstore", sans-serif;
+  --barlow-font: "Barlow", sans-serif;
+}
+
+body {
+  font-family: var(--barlow-font);
+  background-color: var(--semi-black);
+  color: var(--semi-white)  ;
+}
+a {
+  text-decoration: none;
+  color: var(--semi-white);
+}
+button {
+  cursor: pointer;
+  background-color: transparent;
+  color: var(--semi-white);
+  border: none;
+  font-weight: 500;
+  text-transform: capitalize;
+}
