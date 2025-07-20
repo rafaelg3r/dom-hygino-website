@@ -1,11 +1,13 @@
 @import url("./header.css");
 @import url("./main.css");
 @import url("./classes.css");
+@import url("./apresentation.css");
+@import url("./cortes.css");
 
 @font-face {
   font-family: "Roadstore";
-  src: url(../font/Roadstore.otf) format("otf"),
-    url(../font/Roadstore.ttf) format("ttf");
+  src: url("../font/Roadstore.otf") format("otf"),
+    url("../font/Roadstore.ttf") format("ttf");
 }
 
 * {
@@ -20,6 +22,7 @@ html {
 :root {
   --semi-black: #0a0a0a;
   --semi-white: #f5e1c8;
+  --light-gray:#51484C;
   --pink-gray: #2c2125;
   --pink-red: #e53344;
 

@@ -1,0 +1,73 @@
+@import url("./style.css");
+
+section.cortes-menu {
+  position: relative;
+
+  .cortes-top-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+  }
+  .cortes-bottom-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+  }
+
+  h2 {
+    font-family: var(--roadstore-font);
+    font-size: 10em;
+    font-weight: 400;
+    letter-spacing: 16px;
+    text-align: center;
+    padding-top: 19.4rem;
+    margin-bottom: 3rem;
+    cursor: default;
+  }
+  .menu-selectors-container {
+    padding-top: 14.6rem;
+    .menu-selector {
+      display: flex;
+      flex-flow: column;
+      margin-top: -14.6rem;
+    }
+
+    .pampeira-card {
+      background-image: url("../assets/linha-pampeira-bg.png");
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-position: center;
+      width: 160rem;
+      height: 62.9rem;
+      display: flex;
+      align-items: end;
+      justify-content: center;
+      z-index: 10;
+    }
+    .novilho-card {
+      img {
+        z-index: 4;
+      }
+    }
+    .boutique-card {
+      img {
+        z-index: 3;
+      }
+    }
+    .produtos-card {
+      padding-bottom: 40rem;
+      img {
+        z-index: 2;
+      }
+    }
+
+    .pampeira-text {
+      z-index: 6;
+      position: absolute;
+    }
+  }
+}

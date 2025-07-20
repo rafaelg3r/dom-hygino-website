@@ -1,0 +1,23 @@
+@import url("./style.css");
+
+section.apresentation {
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  padding: 5rem 16rem 15rem 16rem;
+  align-items: center;
+  
+  .apresentation-logo {
+    width: 53.6rem;
+  }
+  .apresentation-text {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    p {
+      font-size: 3.6rem;
+      line-height: 50px;
+    }
+  }
+}
