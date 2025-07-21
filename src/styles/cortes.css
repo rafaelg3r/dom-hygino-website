@@ -18,7 +18,7 @@ section.cortes-menu {
     width: 100%;
   }
 
-  h2 {
+  h2.cortes-menu-title {
     font-family: var(--roadstore-font);
     font-size: 10em;
     font-weight: 400;
@@ -33,19 +33,20 @@ section.cortes-menu {
     .menu-selector {
       display: flex;
       flex-flow: column;
+      align-items: end;
+      justify-content: center;
+
       margin-top: -14.6rem;
+      min-height: 62.9rem;
+
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
     }
 
     .pampeira-card {
       background-image: url("../assets/linha-pampeira-bg.png");
-      background-repeat: no-repeat;
-      background-size: auto;
-      background-position: center;
-      width: 160rem;
-      height: 62.9rem;
-      display: flex;
-      align-items: end;
-      justify-content: center;
+
       z-index: 10;
     }
     .novilho-card {
@@ -65,9 +66,35 @@ section.cortes-menu {
       }
     }
 
-    .pampeira-text {
-      z-index: 6;
-      position: absolute;
+    .menu-text {
+      text-align:end;
+      padding: 18rem 12rem;
+      h2{
+        font-size: 6.4rem;
+        font-family: var(--roadstore-font);
+        font-variant: small-caps;
+        text-transform: uppercase;
+        font-weight: 400;
+        padding-bottom: 1.2rem;
+      }
+      p {
+        font-size: 2.4rem;
+        font-family: var(--barlow-font);
+        font-weight: 400;
+        line-height: 28px;
+        max-width:54rem;
+        padding-bottom: 3rem;
+      }
+      button {
+        font-family: var(--roadstore-font);
+        font-size: 2rem;
+        font-weight: 300;
+        font-variant: small-caps;
+        text-transform: uppercase;
+        padding: 2rem 3rem;
+        background-color: var(--pink-gray);
+        border-radius: 2px;
+      }
     }
   }
 }
