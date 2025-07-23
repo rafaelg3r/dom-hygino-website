@@ -12,64 +12,76 @@ section.cortes-menu {
   }
   .cortes-bottom-bg {
     position: absolute;
-    bottom: 0;
+    bottom: -30rem;
     left: 0;
     z-index: -1;
     width: 100%;
   }
-
-  h2.cortes-menu-title {
-    font-family: var(--roadstore-font);
-    font-size: 10em;
-    font-weight: 400;
-    letter-spacing: 16px;
-    text-align: center;
-    padding-top: 19.4rem;
-    margin-bottom: 3rem;
-    cursor: default;
+  .cortes-menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .cortes-menu-title {
+      font-weight: 400;
+      font-size: 10em;
+      letter-spacing: 16px;
+      text-align: center;
+      padding-top: 19.4rem;
+      margin-bottom: 3rem;
+      cursor: default;
+    }
   }
   .menu-selectors-container {
     padding-top: 14.6rem;
     .menu-selector {
       display: flex;
       flex-flow: column;
-      align-items: end;
+
       justify-content: center;
 
       margin-top: -14.6rem;
       min-height: 62.9rem;
 
       background-repeat: no-repeat;
-      background-size: cover;
+      background-size: 102%;
       background-position: center;
+      transition: background-position 300ms ease;
+      &:hover {
+        background-position: top;
+      }
     }
 
     .pampeira-card {
       background-image: url("../assets/linha-pampeira-bg.png");
-
+      align-items: end;
+      text-align: end;
       z-index: 10;
     }
     .novilho-card {
-      img {
-        z-index: 4;
-      }
+      background-image: url("../assets/linha-novilho-jovem-bg.png");
+      align-items: start;
+      text-align: start;
+      z-index: 4;
     }
     .boutique-card {
-      img {
-        z-index: 3;
-      }
+      background-image: url("../assets/linha-boutique-bg.png");
+      align-items: end;
+      text-align: end;
+
+      z-index: 3;
     }
     .produtos-card {
-      padding-bottom: 40rem;
-      img {
-        z-index: 2;
-      }
+      margin-bottom: 40rem;
+
+      background-image: url("../assets/produtos-bg.png");
+      align-items: start;
+      text-align: start;
+      z-index: 2;
     }
 
     .menu-text {
-      text-align:end;
       padding: 18rem 12rem;
-      h2{
+      h2 {
         font-size: 6.4rem;
         font-family: var(--roadstore-font);
         font-variant: small-caps;
@@ -82,7 +94,7 @@ section.cortes-menu {
         font-family: var(--barlow-font);
         font-weight: 400;
         line-height: 28px;
-        max-width:54rem;
+        max-width: 54rem;
         padding-bottom: 3rem;
       }
       button {

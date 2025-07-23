@@ -8,12 +8,35 @@
   -webkit-text-fill-color: transparent;
   display: inline-block;
 }
+.silver-gradient-left {
+  background: #d1d1d1;
+  background: linear-gradient(to left, #d1d1d1 0%, #a8a8a8 50%, #6d6d6d 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.silver-gradient-mid {
+  background: #6d6d6d;
+  background: linear-gradient(
+    to right,
+    #6d6d6d 0%,
+    #a8a8a8 20%,
+    #d1d1d1 50%,
+    #a8a8a8 80%,
+    #6d6d6d 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
 
 .pink-red-color {
   color: var(--pink-red);
 }
 
 .border-btn {
-  border:4px solid var(--pink-gray);
+  border: 4px solid var(--pink-gray);
   background-color: transparent !important;
 }
