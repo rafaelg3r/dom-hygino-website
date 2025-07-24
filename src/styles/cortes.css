@@ -2,20 +2,23 @@
 
 section.cortes-menu {
   position: relative;
+  overflow: hidden;
+  padding-bottom: 20rem;
 
   .cortes-top-bg {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -3;
-    width: 100%;
+    z-index: -1;
+    width: 100vw;
   }
   .cortes-bottom-bg {
     position: absolute;
-    bottom: -30rem;
+    bottom: 0rem;
     left: 0;
-    z-index: -3;
-    width: 100%;
+    z-index: -1;
+    width: 100vw;
+   
   }
   .cortes-menu-container {
     display: flex;
@@ -27,61 +30,46 @@ section.cortes-menu {
       letter-spacing: 16px;
       text-align: center;
       padding-top: 19.4rem;
-      margin-bottom: 3rem;
-      cursor: default;
+      margin-bottom: 25rem;
     }
   }
   .menu-selectors-container {
-    padding-top: 14.6rem;
-    .menu-selector {
+    /* padding-top: 14.6rem; */
+    .linha-pompeira,
+    .linha-novilho,
+    .linha-boutique,
+    .produtos {
       display: flex;
-      flex-flow: column;
-
-      justify-content: center;
+      justify-content: end;
       align-items: center;
-
-      margin-top: -14.6rem;
-      min-height: 62.9rem;
-
-      background-repeat: no-repeat;
-      background-size: 102%;
+      background-size: cover;
       background-position: center;
-
-      img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -2;
-        transition: filter 0.3s ease;
-      }
+      transition: transform 0.4s ease;
 
       &:hover {
-        img {
-         filter: brightness(1.6);
-        }
+        transform: scale(1.05);
       }
     }
-
-    .pampeira-card, .boutique-card {
-      align-items: end;
-      text-align: end;
-      position: relative;
+    .linha-novilho,
+    .produtos {
+      justify-content: start;
     }
-    .novilho-card, .produtos-card {
-      align-items: start;
-      text-align: start;
-      position: relative;
-      img{
-        z-index: -1;
-      }
+    .linha-pompeira {
+      background-image: url("../assets/pampeira-image-bg.png");
     }
-    .produtos-card {
-      margin-bottom: 40rem;
+    .linha-novilho {
+      background-image: url("../assets/novilho-image-bg.png");
     }
-
+    .linha-boutique {
+      background-image: url("../assets/boutique-image-bg.png");
+    }
+    .produtos {
+      background-image: url("../assets/produtos-image-bg.png");
+      margin-bottom: 25rem;
+    }
     .menu-text {
-      padding: 18rem 12rem;
+      padding: 8rem 12rem;
+      transition: transform 0.3s ease-in-out;
       h2 {
         font-size: 6.4rem;
         font-family: var(--roadstore-font);
