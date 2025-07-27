@@ -1,7 +1,7 @@
 @import url("./style.css");
 
 section.lojas {
-  margin-top: 8rem;
+  margin-top: 5rem;
   padding: 0 12rem;
   background-image: url(../assets/lojas-bg.png);
   background-repeat: no-repeat;

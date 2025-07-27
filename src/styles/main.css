@@ -62,17 +62,10 @@ main {
         display: flex;
         gap: 4.5rem;
         button {
-          text-align: center;
           padding: 1.8rem 4rem;
           font-size: 2rem;
-          font-weight: 600;
-          text-transform: uppercase;
-          background-color: var(--pink-gray);
-          color: var(--semi-white);
-          border-radius: 0.2rem;
-          box-shadow: 4px 4px 8px rgb(3, 1, 1, 0.25);
-          transition: transform 0.2s ease-in-out;
 
+          transition: transform 0.2s ease-in-out, filter .3s ease;
           &:hover {
             transform: scale(1.05);
           }
@@ -93,13 +86,18 @@ main {
         img {
           width: auto;
           height: 48rem;
-          filter: drop-shadow(-1rem 1rem 3rem rgba(0, 0, 0, 0.8));
+          /* filter: drop-shadow(-1rem 1rem 3rem rgba(0, 0, 0, 0.8)); */
+          z-index: 2;
         }
         button {
           align-self: flex-end;
+          
+        }
+        .splide__pagination__page:focus-visible {
+          outline: 3px solid var(--pink-gray);
         }
         .splide__pagination__page {
-          background-color: var(--light-gray) ;
+          background-color: var(--light-gray);
         }
         .is-active {
           background-color: var(--pink-red);
