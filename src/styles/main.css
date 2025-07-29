@@ -76,8 +76,8 @@ main {
       margin-top: 10rem;
     }
     .splide {
-      width: 60rem;
-      height: 60rem;
+      max-width: 60rem;
+      max-height: 60rem;
       li {
         display: flex;
         height: 60rem;
