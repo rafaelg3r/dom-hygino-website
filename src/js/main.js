@@ -6,10 +6,5 @@ document.addEventListener("DOMContentLoaded", function () {
     interval: 7000,
     arrows: false,
     pagination: true,
-    breackpoints: {
-      768: {
-        perPage: 1,
-      },
-    },
   }).mount()
 })

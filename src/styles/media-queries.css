@@ -17,7 +17,6 @@
   header {
     justify-content: space-between;
     padding: 0.7rem 3rem;
-    width: 32rem;
     min-width: 32rem;
     nav {
       display: none;
@@ -33,13 +32,20 @@
       padding: 0 1.5rem;
       flex-flow: column-reverse;
       .hero-text {
+        justify-content: center;
+        align-items: center;
         padding-top: 2rem;
+        text-align: center;
         h1 {
           font-size: 1.6rem;
+          font-weight: 400;
         }
         strong {
           font-size: 3.2rem;
           text-align: center;
+        }
+        p {
+          line-height: 1.6rem;
         }
         .hero-btns {
           flex-flow: column;
@@ -47,8 +53,12 @@
       }
       .splide {
         li {
+          max-height: 40rem;
           img {
             height: 31.5rem;
+          }
+          .splide__pagination__page {
+            display: none;
           }
         }
       }
@@ -56,16 +66,24 @@
   }
   section.apresentation {
     flex-flow: column;
-    padding: 1.5rem;
+    padding: 20rem 1.5rem;
+    gap: 4rem;
     .apresentation-logo {
       width: 20rem;
     }
+    .apresentation-text {
+      p {
+        font-size: 1.6rem !important;
+      }
+    }
   }
   section.cortes-menu {
-    padding: 0 0;
+    padding: 0;
     div.cortes-menu-container {
       h2.cortes-menu-title {
         font-size: 4.8rem;
+        padding-top: 1rem;
+        margin-bottom: 2rem;
       }
     }
     .menu-selectors-container {
@@ -75,7 +93,8 @@
       .produtos {
         justify-content: center;
         .menu-text {
-          padding: 2rem 1rem;
+          padding: 8rem 1rem;
+          gap: 4rem;
           align-items: center;
           justify-content: center;
           text-align: center;
@@ -86,7 +105,8 @@
           p {
             font-size: 1.4rem;
             line-height: 1.6rem;
-            padding-bottom: 1rem;
+            margin-top: -2rem;
+            padding-bottom: 0;
           }
         }
       }
@@ -95,8 +115,14 @@
 
   section.lojas {
     padding: 0 1.5rem;
+    .lojas-title-container {
+      h2.lojas-title {
+        font-size: 4.4rem;
+      }
+    }
     .lojas-content-container {
       flex-flow: column;
+      padding-bottom: 10rem !important;
       .lojas-map {
         max-width: 25rem;
         img {
