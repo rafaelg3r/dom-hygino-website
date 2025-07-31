@@ -12,8 +12,8 @@
 
 @font-face {
   font-family: "Roadstore";
-  src: url("../font/Roadstore.woff2") format("woff2"),
-    url("../font/Roadstore.woff") format("woff");
+  src: url("font/Roadstore.woff2") format("woff2"),
+    url("font/Roadstore.woff") format("woff");
 }
 
 * {
@@ -34,8 +34,8 @@ html {
   --dark-pink-gray: rgb(27, 23, 25);
   --pink-red: #e53344;
 
-  --roadstore-font: "Roadstore", sans-serif;
-  --barlow-font: "Barlow", sans-serif;
+  --roadstore-font: "Roadstore";
+  --barlow-font: "Barlow";
 }
 
 body {
