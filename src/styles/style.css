@@ -12,8 +12,8 @@
 
 @font-face {
   font-family: "Roadstore";
-  src: url("../font/Roadstore.otf") format("otf"),
-    url("../font/Roadstore.ttf") format("ttf");
+  src: url("../font/Roadstore.woff2") format("woff2"),
+    url("../font/Roadstore.woff") format("woff");
 }
 
 * {
@@ -78,6 +78,7 @@ button {
   }
 }
 
-.hidden, .media-hidden {
+.hidden,
+.media-hidden {
   display: none;
 }
