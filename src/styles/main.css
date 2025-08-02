@@ -45,7 +45,7 @@ main {
         text-transform: uppercase;
       }
       strong {
-        font-size: 8rem;
+        font-size: clamp(3.2rem, 2rem + 3.75vw, 8rem);
         font-family: var(--roadstore-font);
         font-weight: 400;
         width: max-content;

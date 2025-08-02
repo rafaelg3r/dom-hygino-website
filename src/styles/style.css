@@ -13,7 +13,6 @@
 @font-face {
   font-family: "Roadstore";
   src: url("../font/roadstore-font.woff2") format("woff2");
-  
 }
 
 * {
@@ -55,7 +54,7 @@ h3 {
   font-family: "Roadstore";
 }
 p {
-  font-size: 2.4rem;
+  font-size: clamp(1.4rem, 1.26rem + 0.4464vw 2.4rem) !important;
 }
 button {
   cursor: pointer;
