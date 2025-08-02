@@ -99,6 +99,10 @@
       .linha-boutique,
       .produtos {
         justify-content: center;
+
+        &:hover {
+          background-position: center;
+        }
         .menu-text {
           padding: 8rem 1rem;
           gap: 4rem;
