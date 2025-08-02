@@ -12,8 +12,8 @@
 
 @font-face {
   font-family: "Roadstore";
-  src: url("font/Roadstore.woff2") format("woff2"),
-    url("font/Roadstore.woff") format("woff");
+  src: url("../font/Roadstore.woff2") format("woff2");
+  /* url("../font/Roadstore.woff") format("woff"); */
 }
 
 * {
@@ -52,7 +52,7 @@ span {
 }
 h2,
 h3 {
-  font-family: var(--roadstore-font);
+  font-family: "Roadstore";
 }
 p {
   font-size: 2.4rem;
