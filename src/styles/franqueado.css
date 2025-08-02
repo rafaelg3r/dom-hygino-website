@@ -21,6 +21,7 @@ section.franqueados {
   p {
     text-align: center;
     max-width: 73.5rem;
+    font-size: 2.4rem;
   }
   span {
     font-family: Georgia, "Times New Roman", Times, serif;

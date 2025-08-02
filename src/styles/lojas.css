@@ -20,7 +20,7 @@ section.lojas {
     display: flex;
     justify-content: space-between;
     padding-top: 11.5rem;
-    padding-bottom: 27rem;
+    padding-bottom: 19rem;
     .lojas-map {
       position: relative;
       max-width: 77rem;
