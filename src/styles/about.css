@@ -50,7 +50,7 @@ section.about {
       background-image: url("../assets/ijui-loja.jpg");
       background-size: cover;
       background-position: center;
-      border-radius: 1.2rem;
+      border-radius: .4rem;
       filter: brightness(0.8);
     }
     .nossa-historia-text {
@@ -72,7 +72,7 @@ section.about {
       background-image: url("../assets/horizontina-loja.jpg");
       background-size: cover;
       background-position: center;
-      border-radius: 1.2rem;
+      border-radius: .4rem;
       filter: brightness(0.8);
     }
     .nossa-missao-text {

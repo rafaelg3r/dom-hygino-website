@@ -70,7 +70,9 @@ header {
       /* text-transform: uppercase; */
       font-weight: 600;
       letter-spacing: 3.2px;
+
     }
+  
 
     .nav-products-container {
       display: flex;

@@ -65,13 +65,14 @@ main {
           padding: 1.8rem 4rem;
           font-size: 2rem;
 
-          transition: transform 0.2s ease-in-out, filter .3s ease;
+          transition: transform 0.2s ease-in-out, filter 0.3s ease;
           &:hover {
             transform: scale(1.05);
           }
         }
       }
     }
+   
     .hero-slider {
       margin-top: 10rem;
     }
@@ -83,6 +84,7 @@ main {
         height: 60rem;
         justify-content: center;
         align-items: center;
+
         img {
           width: auto;
           height: 48rem;
@@ -91,7 +93,6 @@ main {
         }
         button {
           align-self: flex-end;
-          
         }
         .splide__pagination__page:focus-visible {
           outline: 3px solid var(--pink-gray);

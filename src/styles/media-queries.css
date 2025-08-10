@@ -49,6 +49,7 @@
         }
         .hero-btns {
           flex-flow: column;
+          gap: 1.5rem;
           a,
           a button {
             display: flex;
@@ -60,9 +61,9 @@
       }
       .splide {
         li {
-          max-height: 40rem;
+          max-height: 26rem;
           img {
-            height: 31.5rem;
+            height: 24rem;
           }
           .splide__pagination__page {
             display: none;
