@@ -34,27 +34,35 @@
       </a>
       <nav>
         <div class="left-nav">
-          <a class="line-link" href="home">home</a>
-          <a class="line-link" href="" class="nav-produtos-container">
+          <a class="line-link" href="#home">home</a>
+          <div class="line-link nav-produtos-container">
             <span class="nav-products">produtos</span>
             <img
               src="./src/assets/down-arrow.png"
+              class="up-arrow"
               alt="Ponta de seta apontando para baixo"
             />
-            <div class="produtos-list hidden">
-              <ul>
-                <li>Linha Pompeira</li>
-                <li>Produtos</li>
-                <li>Linha Novilho Jovem</li>
-                <li>Linha Boutique</li>
-              </ul>
+            <div class="produtos-list-wrapper hidden">
+              <div class="blank-space"></div>
+              <div class="produtos-list">
+                <a href="linha-novilho-jovem" class="produtos-list-item"
+                  >Linha Novilho Jovem</a
+                >
+                <a href="linha-pampeira" class="produtos-list-item"
+                  >Linha Pompeira</a
+                >
+                <a href="linha-boutique" class="produtos-list-item"
+                  >Linha Boutique</a
+                >
+                <a href="produtos" class="produtos-list-item">Produtos</a>
+              </div>
             </div>
-          </a>
-          <a class="line-link" href="lojas">lojas</a>
+          </div>
+          <a class="line-link" href="#lojas">lojas</a>
           <a class="line-link" href="blog">blog</a>
         </div>
         <div class="right-nav">
-          <a class="line-link" href="franqueado">seja um franqueado</a>
+          <a class="line-link" href="#">seja um franqueado</a>
           <a href="https://linktr.ee/domhygino" target="_blank">
             <img
               class="instagram-icon"
@@ -66,8 +74,42 @@
           <button>Contato</button>
         </div>
       </nav>
-      <img src="./src/assets/header-options.svg" class="media-hidden" alt="" />
+      <img
+        id="header-options"
+        src="./src/assets/header-options.svg"
+        class="media-hidden"
+        alt=""
+      />
     </header>
+    <div class="burguer-options ">
+      <div class="burguer-option">
+        <a href="home">home</a>
+      </div>
+      <div class="burguer-option">
+        <a href="produtos">lojas</a>
+      </div>
+      <div class="burguer-option burguer-produtos">
+        <div class="produtos-burguer-text">
+          <span>produtos</span>
+          <img src="./src/assets/down-arrow.png" alt="Ponta de seta apontando para baixo">
+        </div>
+        <div class="burguer-produtos-list-wrapper hidden">
+          <a href="linha-pampeira">linha pampeira</a>
+          <a href="linha-novilho-jovem">linha novilho jovem</a>
+          <a href="linha-boutique">linha boutique</a>
+          <a href="produtos">produtos</a>
+        </div>
+      </div>
+      <div class="burguer-option">
+        <a href="blog">blog</a>
+      </div>
+      <div class="burguer-option">
+        <a href="franqueado">seja um franqueado</a>
+      </div>
+      <div class="burguer-option">
+        <a href="contato">contato</a>
+      </div>
+    </div>
     <main>
       <div class="hero">
         <div class="hero-text">

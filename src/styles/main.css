@@ -63,7 +63,7 @@ main {
         gap: 4.5rem;
         button {
           padding: 1.8rem 4rem;
-          font-size: 2rem;
+          font-size: 1.8rem;
 
           transition: transform 0.2s ease-in-out, filter 0.3s ease;
           &:hover {
@@ -77,8 +77,8 @@ main {
       margin-top: 10rem;
     }
     .splide {
-      max-width: 60rem;
-      max-height: 60rem;
+      max-width: 50rem;
+      max-height: 50rem;
       li {
         display: flex;
         height: 60rem;

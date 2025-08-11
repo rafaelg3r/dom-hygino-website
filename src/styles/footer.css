@@ -52,6 +52,7 @@ footer {
       }
       .footer-contents {
         display: flex;
+        flex-wrap: wrap;
         gap: 12rem;
 
         .footer-text {

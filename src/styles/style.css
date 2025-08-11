@@ -79,5 +79,5 @@ button {
 
 .hidden,
 .media-hidden {
-  display: none;
+  display: none !important;
 }
