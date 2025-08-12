@@ -6,17 +6,17 @@
     padding: 1rem 6rem;
   }
   main {
-    .hero{
+    .hero {
       padding: 0 8rem;
     }
   }
-  .apresentation{
+  .apresentation {
     flex-flow: column;
   }
 }
 @media (max-width: 1150px) {
   main {
-    .hero{
+    .hero {
       padding: 0 4rem;
     }
   }
@@ -127,10 +127,12 @@
           }
         }
       }
+      .hero-slider {
+        width: 100%;
+      }
       .splide {
         li {
           max-height: 26rem;
-          width: 50vw;
           img {
             height: 24rem;
           }
@@ -282,40 +284,39 @@
 
   footer {
     .main-footer {
-      padding: 0 1.5rem;
+      padding: 1.5rem;
+      gap:5rem;
       .footer-up {
         flex-wrap: wrap;
+        flex-flow: column;
+        justify-content: center;
+        align-items: center;
         .footer-logo {
           width: 100%;
           display: flex;
           align-items: center;
           justify-content: center;
+          margin-bottom: 4rem;
         }
         .footer-contents {
           flex-wrap: wrap;
-        }
-      }
-      .footer-down {
-        gap: 2rem;
-        .footer-horarios {
           display: flex;
           flex-flow: column;
-          gap: 2rem;
-          .horario {
-            gap: 0.5rem !important;
-            flex-flow: column;
-            justify-content: center;
-            align-items: center;
-          }
-          .sunday {
-            margin-bottom: 1rem;
+          justify-content: center;
+          align-items: center;
+          gap: 6rem;
+          .footer-text {
+            text-align: center;
+            a{
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
           }
         }
       }
-    }
-    .footer-rights {
-      span {
-        font-size: 1rem;
+      .footer-rights {
+        margin-top: -3rem;
       }
     }
   }
