@@ -83,15 +83,18 @@
     </header>
     <div class="burguer-options hidden">
       <div class="burguer-option">
-        <a href="home">home</a>
+        <a href="index.html">home</a>
       </div>
       <div class="burguer-option">
-        <a href="produtos">lojas</a>
+        <a href="index.html#lojas">lojas</a>
       </div>
       <div class="burguer-option burguer-produtos">
         <div class="produtos-burguer-text">
           <span>produtos</span>
-          <img src="./src/assets/down-arrow.png" alt="Ponta de seta apontando para baixo">
+          <img
+            src="./src/assets/down-arrow.png"
+            alt="Ponta de seta apontando para baixo"
+          />
         </div>
         <div class="burguer-produtos-list-wrapper hidden">
           <a href="linha-pampeira">linha pampeira</a>
@@ -101,10 +104,10 @@
         </div>
       </div>
       <div class="burguer-option">
-        <a href="blog">blog</a>
+        <a href="blog.html">blog</a>
       </div>
       <div class="burguer-option">
-        <a href="franqueado">seja um franqueado</a>
+        <a href="index.html#franqueado">seja um franqueado</a>
       </div>
       <div class="burguer-option">
         <a href="contato">contato</a>
@@ -173,12 +176,12 @@
     <section id="cortes" class="cortes-menu">
       <picture>
         <source
-          srcset="./src/assets/cortes-top-bg-phone.png"
+          srcset="./src/assets/cortes/cortes-top-bg-phone.png"
           media="(max-width: 768px)"
         />
         <img
           draggable="false"
-          src="./src/assets/cortes-top-bg.png"
+          src="./src/assets/cortes/cortes-top-bg.png"
           class="cortes-top-bg"
         />
       </picture>
@@ -186,9 +189,44 @@
         <h2 class="cortes-menu-title silver-gradient-mid">Cortes</h2>
       </div>
       <div class="menu-selectors-container">
-        <div class="linha-pompeira">
+        <div class="linha-boutique">
           <div class="menu-text">
-            <h2 class="silver-gradient-right">linha Pompeira</h2>
+            <h2 class="silver-gradient-left">linha boutique</h2>
+            <p>
+              A carne da linha Boutique é composta por cortes premium, com
+              acabamento de gordura ideal e excelente marmoreio. Oferece maciez,
+              suculência e sabor marcante, ideal para quem busca uma experiência
+              gourmet.
+            </p>
+            <button>--- Acessar Linha ---</button>
+          </div>
+        </div>
+        <div class="linha-novilho">
+          <div class="menu-text">
+            <h2 class="silver-gradient-right">linha novilho Jovem</h2>
+            <p>
+              A carne da linha Novilho Jovem vem de animais selecionados e mais
+              jovens, oferecendo cortes com maciez superior, sabor suave e
+              excelente suculência, ideais para churrascos e pratos especiais.
+            </p>
+            <button class="right-btn">--- Acessar Linha ---</button>
+          </div>
+        </div>
+        <div class="linha-campo-nobre">
+          <div class="menu-text">
+            <h2 class="silver-gradient-left">linha campo nobre</h2>
+            <p>
+              As carnes da linha Campo Nobre demonstram o verdadeiro sabor do
+              Sul! Através de cortes tradicionais e com um preço competitivo,
+              aprecie a qualidade e o sabor inconfundíveis dessa seleção
+              especial.
+            </p>
+            <button>--- Acessar Linha ---</button>
+          </div>
+        </div>
+        <div class="linha-pampeira">
+          <div class="menu-text">
+            <h2 class="silver-gradient-right">linha Pampeira</h2>
             <p>
               A carne da linha Pampeira oferece cortes bovinos tradicionais com
               maciez, suculência e sabor autêntico. É ideal para o dia a dia,
@@ -197,29 +235,7 @@
             <button class="right-btn">--- Acessar Linha ---</button>
           </div>
         </div>
-        <div class="linha-novilho">
-          <div class="menu-text">
-            <h2 class="silver-gradient-left">linha novilho Jovem</h2>
-            <p>
-              A carne da linha Novilho Jovem vem de animais selecionados e mais
-              jovens, oferecendo cortes com maciez superior, sabor suave e
-              excelente suculência, ideais para churrascos e pratos especiais.
-            </p>
-            <button>--- Acessar Linha ---</button>
-          </div>
-        </div>
-        <div class="linha-boutique">
-          <div class="menu-text">
-            <h2 class="silver-gradient-right">linha boutique</h2>
-            <p>
-              A carne da linha Boutique é composta por cortes premium, com
-              acabamento de gordura ideal e excelente marmoreio. Oferece maciez,
-              suculência e sabor marcante, ideal para quem busca uma experiência
-              gourmet.
-            </p>
-            <button class="right-btn">--- Acessar Linha ---</button>
-          </div>
-        </div>
+
         <div class="produtos">
           <div class="menu-text">
             <h2 class="silver-gradient-left">Produtos</h2>
@@ -235,12 +251,12 @@
       </div>
       <picture>
         <source
-          srcset="./src/assets/cortes-bottom-bg-phone.png"
+          srcset="./src/assets/cortes/cortes-bottom-bg-phone.png"
           media="(max-width: 768px)"
         />
         <img
           draggable="false"
-          src="./src/assets/cortes-bottom-bg.png"
+          src="./src/assets/cortes/cortes-bottom-bg.png"
           class="cortes-bottom-bg"
         />
       </picture>
@@ -444,17 +460,21 @@
       </div>
       <div class="video"></div>
     </section>
-    <section class="franqueados">
-      <h3 class="silver-gradient-mid">Quer ser um franqueado<span>?</span></h3>
-      <p>
-        Leve a tradição da Dom Hygino para a sua cidade! <br />
-        Há Anos, a Dom Hygino se destaca pela qualidade, confiança e excelência
-        no mercado de carnes. Construímos uma marca forte, com identidade
-        própria, atendimento diferenciado e um compromisso inabalável com o
-        sabor e a experiência do cliente. E agora, você pode fazer parte dessa
-        história de sucesso!
-      </p>
-      <button>marcar uma reunião</button>
+    <section id="franqueado" class="franqueados">
+      <div class="franqueados-container">
+        <h3 class="silver-gradient-mid">
+          Quer ser um franqueado<span>?</span>
+        </h3>
+        <p>
+          Leve a tradição da Dom Hygino para a sua cidade! <br />
+          Há Anos, a Dom Hygino se destaca pela qualidade, confiança e
+          excelência no mercado de carnes. Construímos uma marca forte, com
+          identidade própria, atendimento diferenciado e um compromisso
+          inabalável com o sabor e a experiência do cliente. E agora, você pode
+          fazer parte dessa história de sucesso!
+        </p>
+        <button>marcar uma reunião</button>
+      </div>
     </section>
     <footer>
       <div class="main-footer">
@@ -482,7 +502,7 @@
             <div class="footer-text">
               <h4>Contato</h4>
               <span href="">(55) 99733-4022</span>
-              <span href="">andre@domhigyno.com.br</span>
+              <span href="">andre@domhygino.com.br</span>
               <a href="#">
                 <address>Rua Santos Dumont 26 centro, Santa Rosa, RS</address>
               </a>
@@ -501,6 +521,7 @@
         <div class="footer-rights">
           <h4>Dom Higyno. Todos direitos reservados.</h4>
         </div>
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>

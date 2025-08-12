@@ -1,0 +1,12 @@
+/* General styles */
+@import url("../general.css");
+
+/* Reutilized components */
+@import url("../header.css");
+@import url("../footer.css");
+
+/* Menu styles */
+@import url("./menu-main.css");
+
+/* Mobile styles */
+@import url("../media-queries/menu-media-queries.css");

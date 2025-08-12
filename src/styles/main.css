@@ -1,4 +1,4 @@
-@import url("./style.css");
+@import url("./general.css");
 
 main {
   height: 84.7rem;
@@ -39,6 +39,7 @@ main {
       flex-flow: column;
 
       h1 {
+        font-family: var(--barlow-font);
         font-size: 1.6rem;
         font-weight: 600;
         letter-spacing: 8px;

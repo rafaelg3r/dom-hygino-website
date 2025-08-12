@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Produtos</title>
+    <link rel="stylesheet" href="./src/styles/menu/menu-style.css" />
+  </head>
+  <body id="home">
+    <header>
+      <a href="./index.html">
+        <img
+          class="logo"
+          src="./src/assets/Dom-logo-white.png"
+          alt="Logo pequena da loja de carnes Dom Hygino"
+        />
+      </a>
+      <nav>
+        <div class="left-nav">
+          <a class="line-link" href="index.html#home">home</a>
+          <div class="line-link nav-produtos-container">
+            <span class="nav-products">produtos</span>
+            <img
+              src="./src/assets/down-arrow.png"
+              class="up-arrow"
+              alt="Ponta de seta apontando para baixo"
+            />
+            <div class="produtos-list-wrapper hidden">
+              <div class="blank-space"></div>
+              <div class="produtos-list">
+                <a href="linha-novilho-jovem" class="produtos-list-item"
+                  >Linha Novilho Jovem</a
+                >
+                <a href="linha-pampeira" class="produtos-list-item"
+                  >Linha Pompeira</a
+                >
+                <a href="linha-boutique" class="produtos-list-item"
+                  >Linha Boutique</a
+                >
+                <a href="produtos" class="produtos-list-item">Produtos</a>
+              </div>
+            </div>
+          </div>
+          <a class="line-link" href="#lojas">lojas</a>
+          <a class="line-link" href="blog">blog</a>
+        </div>
+        <div class="right-nav">
+          <a class="line-link" href="#">seja um franqueado</a>
+          <a href="https://linktr.ee/domhygino" target="_blank">
+            <img
+              class="instagram-icon"
+              src="./src/assets/instagram.svg"
+              width="36px"
+              alt="Icone do instagram"
+            />
+          </a>
+          <button>Contato</button>
+        </div>
+      </nav>
+      <img
+        id="header-options"
+        src="./src/assets/header-options.svg"
+        class="media-hidden"
+        alt=""
+      />
+    </header>
+    <div class="burguer-options hidden">
+      <div class="burguer-option">
+        <a href="index.html">home</a>
+      </div>
+      <div class="burguer-option">
+        <a href="index.html#lojas">lojas</a>
+      </div>
+      <div class="burguer-option burguer-produtos">
+        <div class="produtos-burguer-text">
+          <span>produtos</span>
+          <img
+            src="./src/assets/down-arrow.png"
+            alt="Ponta de seta apontando para baixo"
+          />
+        </div>
+        <div class="burguer-produtos-list-wrapper hidden">
+          <a href="linha-pampeira">linha pampeira</a>
+          <a href="linha-novilho-jovem">linha novilho jovem</a>
+          <a href="linha-boutique">linha boutique</a>
+          <a href="produtos">produtos</a>
+        </div>
+      </div>
+      <div class="burguer-option">
+        <a href="blog.html">blog</a>
+      </div>
+      <div class="burguer-option">
+        <a href="index.html#franqueado">seja um franqueado</a>
+      </div>
+      <div class="burguer-option">
+        <a href="contato">contato</a>
+      </div>
+    </div>
+
+    <main>
+      <div class="main-container">
+        <div class="menu-banner">
+          <picture class="menu-title">
+            <source
+              media="(min-width: 1081px)"
+              srcset="./src/assets/menu/text-linha-N-J.png"
+            />
+            <img
+              src="./src/assets/menu/text-linha-N-J.png"
+              alt="Linha novilho jovem"
+            />
+          </picture>
+          <picture class="menu-banner-steak">
+            <source
+              media="(min-width: 1081px)"
+              srcset="./src/assets/menu/contra-file-banner-image.png"
+            />
+            <img
+              src="./src/assets/menu/contra-file-banner-image.png"
+              alt="carne contra file"
+            />
+          </picture>
+        </div>
+        <div class="banner-line"></div>
+        <div class="menu-container">
+          <div class="menu-selectors"></div>
+          <div class="menu-content"></div>
+          <div class="menu-display"></div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="main-footer">
+        <div class="footer-up">
+          <div class="footer-logo">
+            <img src="./src/assets/Dom-logo-white-big.png" alt="" />
+          </div>
+          <div class="footer-contents">
+            <div class="footer-text">
+              <h4>Navegação</h4>
+              <a href="#home">Início</a>
+              <a href="#cortes">Cortes</a>
+              <a href="#lojas">Lojas</a>
+              <a href="#about">Sobre</a>
+              <a href="#">Blog</a>
+            </div>
+            <div class="footer-text">
+              <h4>Sobre</h4>
+              <a href="#"
+                >Políticas de <br />
+                privacidade</a
+              >
+              <a href="#">Termos de uso</a>
+            </div>
+            <div class="footer-text">
+              <h4>Contato</h4>
+              <span href="">(55) 99733-4022</span>
+              <span href="">andre@domhygino.com.br</span>
+              <a href="#">
+                <address>Rua Santos Dumont 26 centro, Santa Rosa, RS</address>
+              </a>
+            </div>
+            <div class="footer-text">
+              <h4>Parceiros</h4>
+              <a href="http://www.frigorificocallegaro.com.br/" target="_blank"
+                ><img src="" alt="" /><img
+                  src="./src/assets/callegaro.png"
+                  alt=""
+              /></a>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="footer-rights">
+          <h4>Dom Higyno. Todos direitos reservados.</h4>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./src/js/main.js"></script>
+  </body>
+</html>

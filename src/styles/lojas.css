@@ -1,8 +1,8 @@
-@import url("./style.css");
+@import url("./general.css");
 
 section.lojas {
   padding: 10rem 12rem 0 12rem;
-  background-image: url(../assets/lojas-bg.png);
+  background-image: url("../assets/lojas-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -82,6 +82,7 @@ section.lojas {
         }
       }
 
+      /* TODO: agrupar todos os Hovers dos cards em uma só estrutura */
       /* horizontina */
       .horizontina {
         top: 12rem;
@@ -280,7 +281,7 @@ section.lojas {
               inset 1px 0 0px rgba(75, 62, 62, 0.2);
 
             cursor: pointer;
-            transition: transform 0.2s ease, box-shadow 0.1s ease;
+            transition: transform 0.2s ease, box-shadow 0.1s ease, filter .2s ease;
 
             .item-lista-content {
               display: flex;
@@ -309,10 +310,8 @@ section.lojas {
                 inset -1px 0 0px rgba(75, 62, 62, 0.2),
                 inset 1px 0 0px rgba(75, 62, 62, 0.2),
                 0 1px 0 0 var(--semi-black);
+                filter: brightness(1.4);
 
-              img {
-                transform: rotate(8deg);
-              }
             }
           }
         }

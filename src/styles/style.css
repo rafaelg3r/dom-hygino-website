@@ -1,3 +1,7 @@
+/* General styles */
+@import url("./general.css");
+
+/* Home styles */
 @import url("./header.css");
 @import url("./main.css");
 @import url("./classes.css");
@@ -8,76 +12,5 @@
 @import url("./franqueado.css");
 @import url("./footer.css");
 
-@import url("./media-queries.css");
-
-@font-face {
-  font-family: "Roadstore";
-  src: url("../font/roadstore-font.woff2") format("woff2");
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-}
-:root {
-  --semi-black: rgb(10, 10, 10);
-  --semi-white: #f5e1c8;
-  --light-gray: #51484c;
-  --dark-gray: #121011;
-  --pink-gray: #2c2125;
-  --dark-pink-gray: rgb(27, 23, 25);
-  --pink-red: #e53344;
-
-  --roadstore-font: "Roadstore";
-  --barlow-font: "Barlow";
-}
-
-body {
-  font-family: var(--barlow-font);
-  background-color: var(--semi-black);
-  color: var(--semi-white);
-}
-a {
-  text-decoration: none;
-  color: var(--semi-white);
-}
-span {
-  font-family: var(--barlow-font);
-}
-h2,
-h3 {
-  font-family: "Roadstore";
-}
-p {
-  font-size: clamp(1.4rem, 1.26rem + 0.4464vw 2.4rem) !important;
-}
-button {
-  cursor: pointer;
-  background-color: var(--pink-gray);
-  color: var(--semi-white);
-  padding: 2rem 3rem;
-
-  font-family: var(--barlow-font);
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-
-  border: none;
-  border-radius: 0.2rem;
-  box-shadow: 0.4rem 0.4rem 1rem rgba(3, 1, 1, 0.4);
-
-  &:hover {
-    filter: brightness(1.1);
-  }
-}
-
-.hidden,
-.media-hidden {
-  display: none !important;
-}
+/* Mobile styles */
+@import url("./media-queries/home-media-queries.css");

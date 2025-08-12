@@ -34,9 +34,10 @@ section.cortes-menu {
   }
   .menu-selectors-container {
     /* padding-top: 14.6rem; */
-    .linha-pompeira,
-    .linha-novilho,
     .linha-boutique,
+    .linha-novilho,
+    .linha-campo-nobre,
+    .linha-pampeira,
     .produtos {
       display: flex;
       justify-content: end;
@@ -52,6 +53,16 @@ section.cortes-menu {
       }
     }
     .linha-novilho,
+    .linha-pampeira {
+      justify-content: end;
+      .menu-text {
+        justify-content: end;
+        align-items: end;
+        text-align: right;
+      }
+    }
+    .linha-boutique,
+    .linha-campo-nobre,
     .produtos {
       justify-content: start;
       .menu-text {
@@ -60,25 +71,20 @@ section.cortes-menu {
         text-align: left;
       }
     }
-    .linha-pompeira,
     .linha-boutique {
-      .menu-text {
-        justify-content: end;
-        align-items: end;
-        text-align: right;
-      }
-    }
-    .linha-pompeira {
-      background-image: url("../assets/pampeira-image-bg.png");
+      background-image: url("../assets/cortes/boutique-image-bg.png");
     }
     .linha-novilho {
-      background-image: url("../assets/novilho-image-bg.png");
+      background-image: url("../assets/cortes/novilho-image-bg.png");
     }
-    .linha-boutique {
-      background-image: url("../assets/boutique-image-bg.png");
+    .linha-campo-nobre {
+      background-image: url("../assets/cortes/boutique-image-bg.png");
+    }
+    .linha-pampeira {
+      background-image: url("../assets/cortes/pampeira-image-bg.png");
     }
     .produtos {
-      background-image: url("../assets/produtos-image-bg.png");
+      background-image: url("../assets/cortes/produtos-image-bg.png");
     }
     .menu-text {
       display: flex;
@@ -102,7 +108,7 @@ section.cortes-menu {
         padding-bottom: 3rem;
       }
       button {
-        transition: transform 0.2s ease-in-out, filter .3s ease;
+        transition: transform 0.2s ease-in-out, filter 0.3s ease;
         &:hover {
           transform: translate(1rem, 0rem);
         }

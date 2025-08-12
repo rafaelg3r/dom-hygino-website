@@ -40,7 +40,7 @@ footer {
     .footer-up {
       display: flex;
       justify-content: space-between;
-      align-items: flex-end;
+      align-items: center;
       gap: 2rem;
       .footer-logo {
         display: flex;
@@ -53,7 +53,7 @@ footer {
       .footer-contents {
         display: flex;
         flex-wrap: wrap;
-        gap: 12rem;
+        gap: 6rem;
 
         .footer-text {
           display: flex;

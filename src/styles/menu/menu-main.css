@@ -1,0 +1,47 @@
+@import url("../general.css");
+
+main {
+  padding-top: 8.5rem;
+  .main-container {
+    background-color: var(--semi-black);
+    .menu-banner {
+      background-image: url("../../assets/menu/menu-banner.png");
+      background-size: cover;
+      background-position: center;
+      height: 35rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      position: relative;
+      .menu-title {
+        position: absolute;
+        top: 6rem;
+        left: 6rem;
+      }
+      .menu-banner-steak {
+        position: relative;
+        z-index: 2;
+      }
+      .menu-banner-steak::before {
+        content: "";
+        position: absolute;
+        top: 0.9rem;
+        left: 5rem;
+        right: 5rem;
+        bottom: 0.5rem;
+        background-color: rgb(229, 51, 68, 0.35);
+        z-index: -5;
+        border-radius: 50%;
+        filter: blur(5rem);
+      }
+    }
+    .banner-line {
+      background-color: var(--dark-pink-gray);
+      height: 0.5rem;
+      width: 100%;
+      box-shadow: 0 0.3rem 1.2rem rgba(10, 10, 10, 0.3);
+    }
+  }
+}
