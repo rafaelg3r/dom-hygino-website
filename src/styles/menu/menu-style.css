@@ -9,4 +9,5 @@
 @import url("./menu-main.css");
 
 /* Mobile styles */
-@import url("../media-queries/menu-media-queries.css");
+@import url("./media-queries/home-media-queries.css");
+@import url("./media-queries/menu-media-queries.css");
