@@ -55,17 +55,51 @@ main {
         max-width: 35rem;
         padding: 4rem 8rem 0 5rem;
         gap: 2rem;
+        .menu-filtros{
+          margin-top: 1rem;
+        }
         .menu-linhas,
         .menu-filtros {
           display: flex;
           flex-direction: column;
-          gap: 1rem;
+          gap: 2rem;
+
+          .selector-title{
+            line-height: 0.75;
+            font-size: 2.8rem;
+            font-weight: 400;
+            font-family: var(--roadstore-font);
+            text-transform: uppercase;
+            letter-spacing: 0.32rem;
+            background-image: linear-gradient(to right, #2C2125, transparent);
+          }
           .selector-options {
+            padding-left: 3rem;
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
+            gap: 1rem;
+            font-size: 2rem;
+            span{
+              position:relative;
+              cursor: pointer;
+              transition: color 0.13s ease;
+            }
+            span:hover{
+              color: var(--pink-red);
+            }
+            span::before{
+              content: "";
+              position: absolute;
+              left: -3rem;
+              width: 1.4rem;
+              height: 1.4rem;
+              border: solid 1px white;
+              top: 50%;
+              transform: translateY(-50%);
+              }
           }
         }
+
       }
       .menu-content {
         display: flex;
@@ -80,7 +114,7 @@ main {
           grid-column-gap: 3rem;
           grid-row-gap: 2rem;
           .menu-card {
-            background-color: transparent;
+            position: relative;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -92,18 +126,26 @@ main {
             border-radius: 0.4rem;
             border: solid 3px #1a1517;
             cursor: pointer;
-            transition: all 0.5s ease;
+            transition: all 0.6s ease;
 
             img {
               width: 11.5rem;
               height: 13.5rem;
+              transition: all 0.6s ease  ;
+              position: absolute;
+              top: 1.8rem;
+              left: auto;
             }
             .menu-card-text {
+              position: absolute;
+              bottom: 2.1rem;
+              background-color: transparent;
               display: flex;
               flex-direction: column;
               align-items: center;
               text-align: center;
               gap: 0.5rem;
+              transition: padding 0.4s ease, background-color 0.4s ease-in-out;
               h3,
               p {
                 font-family: var(--barlow-font);
@@ -119,20 +161,50 @@ main {
                 font-size: 1rem;
                 color: #51484c;
               }
+              button {
+                display: none;
+                font-size: 1.8rem;
+                font-weight: 400;
+                padding: 0.8rem 1.2rem;
+                box-shadow: none;
+                transition: all 0.3s ease;
+                &:hover {
+                  box-shadow: 0.4rem 0.4rem 1rem rgba(3, 1, 1, 0.4);
+                  transform: translateY(-0.2rem);
+                }
+              }
             }
 
             &:hover {
-              flex-direction: row;
-              justify-content: space-between;
+              /* flex-direction: row; */
+              /* justify-content: space-between; */
+              padding-left: 1.6rem;
+              background-color: #121011;
+              
               .menu-card-text {
-                background-color: #121011;
                 max-width: 14.9rem;
                 height: 100%;
+                padding: 3rem 1.2rem;
+                justify-content: space-between;
+                right: 1.4rem;
+                top: 0.1rem;
+                .card-text-main {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 1rem;
+                  p {
+                    font-size: 1.2rem;
+                  }
+                }
+                button {
+                  display: block;
+                }
               }
-              /* img {
+              img {
                 width: 14.8rem;
                 height: 17.4rem;
-              } */
+                left: 1.6rem;
+              }
             }
           }
         }
@@ -146,5 +218,13 @@ main {
         border-radius: 0.8rem;
       }
     }
+  }
+}
+@keyframes menu-card-hover {
+  0% {
+    
+  }
+  100% {
+    
   }
 }
