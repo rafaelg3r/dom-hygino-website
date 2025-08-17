@@ -198,7 +198,9 @@
               suculência e sabor marcante, ideal para quem busca uma experiência
               gourmet.
             </p>
-            <button>--- Acessar Linha ---</button>
+            <a class="btnLinhaBoutique" href="menu.html">
+              <button>--- Acessar Linha ---</button>
+            </a>
           </div>
         </div>
         <div class="linha-novilho">
@@ -209,7 +211,9 @@
               jovens, oferecendo cortes com maciez superior, sabor suave e
               excelente suculência, ideais para churrascos e pratos especiais.
             </p>
-            <button class="right-btn">--- Acessar Linha ---</button>
+            <a class="btnLinhaNovilhoJovem" href="menu.html"
+              ><button class="right-btn">--- Acessar Linha ---</button></a
+            >
           </div>
         </div>
         <div class="linha-campo-nobre">
@@ -221,7 +225,9 @@
               aprecie a qualidade e o sabor inconfundíveis dessa seleção
               especial.
             </p>
-            <button>--- Acessar Linha ---</button>
+            <a class="btnLinhaCampoNobre" href="menu.html"
+              ><button>--- Acessar Linha ---</button></a
+            >
           </div>
         </div>
         <div class="linha-pampeira">
@@ -232,7 +238,9 @@
               maciez, suculência e sabor autêntico. É ideal para o dia a dia,
               combinando qualidade consistente com ótimo custo-benefício.
             </p>
-            <button class="right-btn">--- Acessar Linha ---</button>
+            <a class="btnLinhaPampeira" href="menu.html"
+              ><button class="right-btn">--- Acessar Linha ---</button></a
+            >
           </div>
         </div>
 
@@ -245,7 +253,9 @@
               seu churrasco. Perfeitos para complementar carnes e transformar
               cada preparo em uma experiência única!
             </p>
-            <button>--- Acessar Produtos ---</button>
+            <a class="btnLinhaProdutos" href="menu.html"
+              ><button>--- Acessar Produtos ---</button></a
+            >
           </div>
         </div>
       </div>
@@ -527,5 +537,17 @@
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
 
     <script src="./src/js/main.js" type="module"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        new Splide("#my-carousel", {
+          type: "loop",
+          perPage: 1,
+          autoplay: true,
+          interval: 7000,
+          arrows: false,
+          pagination: true,
+        }).mount()
+      })
+    </script>
   </body>
 </html>

@@ -127,40 +127,32 @@
             <div class="menu-linhas">
               <strong class="selector-title">Linhas</strong>
               <div class="selector-options">
-                <div class="checkbox-selector">
-                  <input type="checkbox" /><span>Linha Boutique</span>
-                </div>
-                <div class="checkbox-selector">
-                  <input type="checkbox" /><span>Linha Novilho Jovem</span>
-                </div>
-                <div class="checkbox-selector">
-                  <input type="checkbox" /><span>Linha Campo Nobre</span>
-                </div>
-                <div class="checkbox-selector">
-                  <input type="checkbox" /><span>Linha Pampeira</span>
-                </div>
-                <div class="checkbox-selector">
-                  <input type="checkbox" /><span>Produtos</span>
-                </div>
+                <span id="linhaBoutique">Linha Boutique</span>
+                <span id="linhaNovilhoJovem">Linha Novilho Jovem</span>
+                <span id="linhaCampoNobre">Linha Campo Nobre</span>
+                <span id="linhaPampeira">Linha Pampeira</span>
+                <span id="linhaProdutos">Produtos</span>
               </div>
             </div>
             <div class="menu-filtros">
               <strong class="selector-title">Filtros</strong>
               <div class="selector-options">
-                <span>Recomendados</span>
-                <span>Populares</span>
-                <span>Custo benefício</span>
+                <span id="filtro-recomendados" class="menu-selected"
+                  >Recomendados</span
+                >
+                <span id="filtro-populares">Populares</span>
               </div>
             </div>
           </div>
           <div class="menu-content">
             <div class="menu-cards-container">
-              <div class="menu-card">
+             
+              <!-- <div class="menu-card">
                 <img src="./src/assets/menu/menu-card-contrafile.png" alt="" />
                 <div class="menu-card-text">
                   <div class="card-text-main">
-                    <h3>Contrafilé</h3>
-                    <p>Suculento, macio e saboroso</p>
+                    <h3 id="title">Contrafilé</h3>
+                    <p id="description">Suculento, macio e saboroso</p>
                   </div>
                   <button>Saiba mais</button>
                 </div>
@@ -169,8 +161,8 @@
                 <img src="./src/assets/menu/menu-card-maminha.png" alt="" />
                 <div class="menu-card-text">
                   <div class="card-text-main">
-                    <h3>Contrafilé</h3>
-                    <p>Maciez e sabor suave</p>
+                    <h3 id="title">Contrafilé</h3>
+                    <p id="description">Maciez e sabor suave</p>
                   </div>
                   <button>Saiba mais</button>
                 </div>
@@ -179,8 +171,8 @@
                 <img src="./src/assets/menu/menu-card-picanha.png" alt="" />
                 <div class="menu-card-text">
                   <div class="card-text-main">
-                    <h3>Contrafilé</h3>
-                    <p>Suculento, macio e saboroso</p>
+                    <h3 id="title">Contrafilé</h3>
+                    <p id="description">Suculento, macio e saboroso</p>
                   </div>
                   <button>Saiba mais</button>
                 </div>
@@ -189,12 +181,12 @@
                 <img src="./src/assets/menu/menu-card-vazio.png" alt="" />
                 <div class="menu-card-text">
                   <div class="card-text-main">
-                    <h3>Contrafilé</h3>
-                    <p>Maciez e sabor suave</p>
+                    <h3 id="title">Contrafilé</h3>
+                    <p id="description">Maciez e sabor suave</p>
                   </div>
                   <button>Saiba mais</button>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
           <div class="menu-display"></div>
@@ -251,5 +243,6 @@
     </footer>
 
     <script src="./src/js/main.js"></script>
+   
   </body>
 </html>
