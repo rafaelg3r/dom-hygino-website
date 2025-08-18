@@ -26,8 +26,8 @@
     flex-flow: column;
   }
   footer {
-    .main-footer {
-      padding: 5rem 6rem !important;
+    div.main-footer {
+      padding: 5rem 6rem;
       .footer-up {
         flex-flow: column;
         .footer-logo {
@@ -199,7 +199,7 @@
       .linha-novilho,
       .linha-campo-nobre,
       .linha-pampeira,
-      .produtos {
+      .linha-produtos {
         justify-content: center;
 
         &:hover {

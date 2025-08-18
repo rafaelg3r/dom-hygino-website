@@ -1,7 +1,7 @@
 @import url("./style.css");
 
 section.about {
-  padding-top: 8rem ;
+  padding-top: 8rem;
   display: flex;
   flex-flow: column;
   gap: 12rem;
@@ -50,7 +50,7 @@ section.about {
       background-image: url("../assets/ijui-loja.jpg");
       background-size: cover;
       background-position: center;
-      border-radius: .4rem;
+      border-radius: 0.4rem;
       filter: brightness(0.8);
     }
     .nossa-historia-text {
@@ -69,10 +69,10 @@ section.about {
       height: 55rem;
       width: 100%;
 
-      background-image: url("../assets/horizontina-loja.jpg");
+      background-image: url("../assets/capao-loja.jpg");
       background-size: cover;
       background-position: center;
-      border-radius: .4rem;
+      border-radius: 0.4rem;
       filter: brightness(0.8);
     }
     .nossa-missao-text {
