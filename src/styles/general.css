@@ -47,6 +47,7 @@ p {
 span {
   font-family: var(--barlow-font);
 }
+a{cursor: pointer;}
 button {
   cursor: pointer;
   background-color: var(--pink-gray);

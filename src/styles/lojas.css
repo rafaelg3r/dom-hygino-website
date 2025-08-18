@@ -32,7 +32,8 @@ section.lojas {
         width: 100%;
         height: auto;
       }
-      .loja-areas {
+      /* TODO: Adicionar todos os hover-popups de cada loja */
+      /* .loja-areas {
         height: 4rem;
         cursor: pointer;
         min-width: 5rem;
@@ -80,11 +81,14 @@ section.lojas {
             }
           }
         }
-      }
+      } */
+.lojas-areas {
+  display: none;
+  
+}
 
       /* TODO: agrupar todos os Hovers dos cards em uma só estrutura */
-      /* horizontina */
-      .horizontina {
+      /* .horizontina {
         top: 12rem;
         left: 28.5rem;
 
@@ -119,8 +123,7 @@ section.lojas {
           opacity: 1;
         }
       }
-      /* santa rosa */
-      /* .santa-rosa {
+      .santa-rosa {
         top: 15.5rem;
         left: 24rem;
         width: 16rem;
@@ -133,7 +136,8 @@ section.lojas {
           left: -37%;
           transform: scale(0);
           opacity: 0;
-          transition: opacity 0.4s ease, transform 0.4s ease-in-out, top 0.2s ease;
+          transition: opacity 0.4s ease, transform 0.4s ease-in-out,
+            top 0.2s ease;
           .lj-card-img {
             background-image: url(../assets/santa-rosa-loja.jpg);
             background-size: cover;
@@ -147,10 +151,10 @@ section.lojas {
               inset -1px 0 0px rgba(75, 62, 62, 0.2),
               inset 1px 0 0px rgba(75, 62, 62, 0.2),
               0 0.6rem 1.6rem 0.1rem var(--semi-black);
-            top:-24rem;
+            top: -24rem;
           }
-      } */
-      /* ijui */
+        }
+      }
       .ijui {
         top: 20rem;
         left: 28.5rem;
@@ -186,20 +190,17 @@ section.lojas {
           opacity: 1;
         }
       }
-      /* caixias do sul */
       .caixias-do-sul {
         top: 25.5rem;
         left: 38rem;
         width: 17.7rem;
       }
-      /* torres */
       .torres {
         top: 30rem;
         right: 12.5rem;
         width: 12rem;
         z-index: 1;
       }
-      /* capao da canoa */
       .capao-da-canoa {
         top: 33.4rem;
         height: 5rem;
@@ -207,7 +208,6 @@ section.lojas {
         width: 18rem;
         z-index: 2;
       }
-      /* porto alegre */
       .porto-alegre {
         top: 36.5rem;
         right: 21.3rem;
@@ -215,7 +215,6 @@ section.lojas {
         height: 3rem;
         z-index: 3;
       }
-      /* jaragua do sul */
       .jaragua-do-sul {
         top: 2rem;
         right: 3rem;
@@ -251,7 +250,7 @@ section.lojas {
           transform: scale(1);
           opacity: 1;
         }
-      }
+      } */
     }
     .lojas-socials {
       h3 {
@@ -281,7 +280,8 @@ section.lojas {
               inset 1px 0 0px rgba(75, 62, 62, 0.2);
 
             cursor: pointer;
-            transition: transform 0.2s ease, box-shadow 0.1s ease, filter .2s ease;
+            transition: transform 0.2s ease, box-shadow 0.1s ease,
+              filter 0.2s ease;
 
             .item-lista-content {
               display: flex;
@@ -310,8 +310,7 @@ section.lojas {
                 inset -1px 0 0px rgba(75, 62, 62, 0.2),
                 inset 1px 0 0px rgba(75, 62, 62, 0.2),
                 0 1px 0 0 var(--semi-black);
-                filter: brightness(1.4);
-
+              filter: brightness(1.4);
             }
           }
         }

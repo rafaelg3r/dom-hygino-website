@@ -38,7 +38,7 @@ section.cortes-menu {
     .linha-novilho,
     .linha-campo-nobre,
     .linha-pampeira,
-    .produtos {
+    .linha-produtos {
       display: flex;
       justify-content: end;
       align-items: center;
@@ -63,7 +63,7 @@ section.cortes-menu {
     }
     .linha-boutique,
     .linha-campo-nobre,
-    .produtos {
+    .linha-produtos {
       justify-content: start;
       .menu-text {
         justify-content: start;
@@ -83,7 +83,7 @@ section.cortes-menu {
     .linha-pampeira {
       background-image: url("../assets/cortes/pampeira-image-bg.png");
     }
-    .produtos {
+    .linha-produtos {
       background-image: url("../assets/cortes/produtos-image-bg.png");
     }
     .menu-text {

@@ -27,6 +27,7 @@
     <header>
       <a href="./index.html">
         <img
+          loading="lazy"
           class="logo"
           src="./src/assets/Dom-logo-white.png"
           alt="Logo pequena da loja de carnes Dom Hygino"
@@ -65,6 +66,7 @@
           <a class="line-link" href="#">seja um franqueado</a>
           <a href="https://linktr.ee/domhygino" target="_blank">
             <img
+              loading="lazy"
               class="instagram-icon"
               src="./src/assets/instagram.svg"
               width="36px"
@@ -75,6 +77,7 @@
         </div>
       </nav>
       <img
+        loading="lazy"
         id="header-options"
         src="./src/assets/header-options.svg"
         class="media-hidden"
@@ -90,8 +93,9 @@
       </div>
       <div class="burguer-option burguer-produtos">
         <div class="produtos-burguer-text">
-          <span>produtos</span>
+          <a href="menu.html">produtos</a>
           <img
+          loading="lazy"
             src="./src/assets/down-arrow.png"
             alt="Ponta de seta apontando para baixo"
           />
@@ -128,7 +132,7 @@
             <a href="#lojas"
               ><button class="border-btn">Ver nossas lojas</button></a
             >
-            <button>Acesse nossos produtos</button>
+            <a href="menu.html"><button>Acesse nossos produtos</button></a>
           </div>
         </div>
 
@@ -198,7 +202,7 @@
               suculência e sabor marcante, ideal para quem busca uma experiência
               gourmet.
             </p>
-            <a class="btnLinhaBoutique" href="menu.html">
+            <a onClick="setLinha('linhaBoutique')" href="menu.html">
               <button>--- Acessar Linha ---</button>
             </a>
           </div>
@@ -211,7 +215,7 @@
               jovens, oferecendo cortes com maciez superior, sabor suave e
               excelente suculência, ideais para churrascos e pratos especiais.
             </p>
-            <a class="btnLinhaNovilhoJovem" href="menu.html"
+            <a onClick="setLinha('linhaNovilhoJovem')" href="menu.html"
               ><button class="right-btn">--- Acessar Linha ---</button></a
             >
           </div>
@@ -225,7 +229,7 @@
               aprecie a qualidade e o sabor inconfundíveis dessa seleção
               especial.
             </p>
-            <a class="btnLinhaCampoNobre" href="menu.html"
+            <a onClick="setLinha('linhaCampoNobre')" href="menu.html"
               ><button>--- Acessar Linha ---</button></a
             >
           </div>
@@ -238,13 +242,13 @@
               maciez, suculência e sabor autêntico. É ideal para o dia a dia,
               combinando qualidade consistente com ótimo custo-benefício.
             </p>
-            <a class="btnLinhaPampeira" href="menu.html"
+            <a onClick="setLinha('linhaPampeira')" href="menu.html"
               ><button class="right-btn">--- Acessar Linha ---</button></a
             >
           </div>
         </div>
 
-        <div class="produtos">
+        <div class="linha-produtos">
           <div class="menu-text">
             <h2 class="silver-gradient-left">Produtos</h2>
             <p>
@@ -253,7 +257,7 @@
               seu churrasco. Perfeitos para complementar carnes e transformar
               cada preparo em uma experiência única!
             </p>
-            <a class="btnLinhaProdutos" href="menu.html"
+            <a onClick="setLinha('linhaProdutos')" href="menu.html"
               ><button>--- Acessar Produtos ---</button></a
             >
           </div>
@@ -441,10 +445,21 @@
         <div class="nossa-historia-text">
           <h3 class="silver-gradient-right">Nossa História</h3>
           <p>
-            A Dom começou... Lorem ipsum dolor sit, amet consectetur adipisicing
-            elit. Ratione eveniet nesciunt cupiditate nemo natus nostrum
-            suscipit, ab aspernatur possimus itaque, beatae excepturi nisi
-            quisquam, autem alias earum magnam facere voluptate?
+            A Dom Hygino nasceu em Santa Rosa no Rio Grande do Sul com um
+            propósito claro: oferecer aos apaixonados por carne uma experiência
+            única e de alta qualidade.
+          </p>
+          <p>
+            Desde o início, a Dom se destacou por combinar tradição e cuidado na
+            escolha de carnes nobres, nacionais e importadas, criando um espaço
+            pensado para quem valoriza sabor, qualidade e experiência. Nosso
+            ambiente também é preparado para eventos exclusivos, proporcionando
+            momentos memoráveis aos nossos clientes.
+          </p>
+          <p>
+            A Dom Hygino é mais do que uma loja de carnes — é um espaço onde
+            paixão, qualidade e dedicação se encontram para transformar cada
+            corte em uma experiência única.
           </p>
         </div>
       </div>
@@ -453,11 +468,15 @@
         <div class="nossa-missao-text">
           <h3 class="silver-gradient-left">A missão da Dom</h3>
           <p>
-            A Dom tem como missão... Lorem ipsum dolor sit amet consectetur
-            adipisicing elit. Est illo suscipit exercitationem, similique
-            numquam voluptatibus architecto dolorem eligendi tenetur dignissimos
-            et tempore accusantium nostrum atque, odit quibusdam nesciunt
-            deserunt quas.
+            Na Dom, nossa missão é oferecer cortes de carne de excelência e
+            produtos gourmet selecionados, proporcionando uma experiência única
+            para quem valoriza qualidade, sabor e tradição. Buscamos transformar
+            cada visita em um momento especial, combinando atendimento
+            personalizado, produtos cuidadosamente escolhidos e um ambiente que
+            reflete nosso compromisso com a satisfação de nossos clientes. Nosso
+            objetivo é ser referência em carnes nobres, levando a paixão pela
+            gastronomia de qualidade a cada corte, em cada evento e em cada nova
+            unidade da Dom Hygino.
           </p>
         </div>
         <div class="nossa-missao-img"></div>
@@ -490,7 +509,11 @@
       <div class="main-footer">
         <div class="footer-up">
           <div class="footer-logo">
-            <img src="./src/assets/Dom-logo-white-big.png" alt="" />
+            <img
+              loading="lazy"
+              src="./src/assets/Dom-logo-white-big.png"
+              alt=""
+            />
           </div>
           <div class="footer-contents">
             <div class="footer-text">
@@ -520,9 +543,7 @@
             <div class="footer-text">
               <h4>Parceiros</h4>
               <a href="http://www.frigorificocallegaro.com.br/" target="_blank"
-                ><img src="" alt="" /><img
-                  src="./src/assets/callegaro.png"
-                  alt=""
+                ><img loading="lazy" src="./src/assets/callegaro.png" alt=""
               /></a>
             </div>
           </div>
