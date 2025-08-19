@@ -71,7 +71,7 @@ section.about {
 
       background-image: url("../assets/capao-loja.jpg");
       background-size: cover;
-      background-position: center;
+      background-position: bottom;
       border-radius: 0.4rem;
       filter: brightness(0.8);
     }

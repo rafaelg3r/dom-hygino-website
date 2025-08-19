@@ -28,10 +28,11 @@ main {
       .menu-banner-steak::before {
         content: "";
         position: absolute;
-        top: 0.9rem;
-        left: 5rem;
+        top: 0rem;
+        padding: 3rem;
+        left: 4rem;
         right: 5rem;
-        bottom: 0.5rem;
+        bottom: 0rem;
         background-color: rgb(229, 51, 68, 0.35);
         z-index: -5;
         border-radius: 50%;
@@ -221,6 +222,17 @@ main {
         margin: 1rem 1rem 1.5rem 0;
         background-color: var(--dark-pink-gray);
         border-radius: 0.8rem;
+
+        /*! conteudo temporario */
+        justify-content: center;
+        align-items: top;
+        padding: 4rem;
+        /*! conteudo temporario */
+        h1{
+          font-size: 4rem;
+          font-weight: 400;
+
+        }
       }
     }
   }

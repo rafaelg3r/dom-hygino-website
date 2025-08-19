@@ -123,10 +123,13 @@ const linhaProdutosCards = {
     description: "Maciez e sabor suave",
   },
 }
+const todasAsLinhasCards = {
+  
+}
 
 const linhaClicada = sessionStorage.getItem("linhaSelecionada")
 console.log(linhaClicada)
-let linhaSelected;
+let linhaSelected; // variavel que guarda o objeto de um card de uma das linhas selecionadas
 function cardsLoad(linhaSelected) {
   cardsContainer.innerHTML = ""
   console.log(linhaSelected)
@@ -174,7 +177,7 @@ function cardsLoad(linhaSelected) {
 if (linhaClicada === "linhaBoutique") {
   linhaBoutique.classList.add("menu-selected")
   cardsLoad(linhaBoutiqueCards)
-  let linhaSelected = linhaBoutiqueCards
+  linhaSelected = linhaBoutiqueCards
 } else if (linhaClicada === "linhaNovilhoJovem") {
   linhaNovilhoJovem.classList.add("menu-selected")
   cardsLoad(linhaNovilhoJovemCards)
@@ -193,6 +196,10 @@ if (linhaClicada === "linhaBoutique") {
   linhaSelected = linhaProdutosCards
 } else {
   console.log("Nenhuma linha foi selecionada")
+  linhaBoutique.classList.add("menu-selected")
+  cardsLoad(linhaBoutiqueCards)
+  linhaSelected = linhaBoutiqueCards
+  console.log(linhaSelected)
 }
 
 const allLinhaCards = [
