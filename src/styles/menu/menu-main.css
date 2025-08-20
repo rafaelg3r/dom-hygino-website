@@ -1,6 +1,8 @@
 @import url("../general.css");
 
 main {
+  height: 120rem;
+  /* height:100%; */
   padding-top: 8.5rem;
   .main-container {
     background-color: var(--semi-black);
@@ -228,15 +230,15 @@ main {
         align-items: top;
         padding: 4rem;
         /*! conteudo temporario */
-        h1{
+        h1 {
           font-size: 4rem;
           font-weight: 400;
-
         }
       }
     }
   }
 }
+
 @keyframes menu-card-hover {
   0% {
   }
