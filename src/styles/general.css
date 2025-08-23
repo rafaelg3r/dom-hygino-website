@@ -1,3 +1,6 @@
+@import url("./media-queries/home-media-queries.css");
+@import url("./media-queries/menu-media-queries.css");
+
 :root {
   --semi-black: #0a0a0a;
   --semi-white: #f5e1c8;
@@ -10,8 +13,8 @@
   --roadstore-font: "Roadstore";
   --barlow-font: "Barlow";
 
-  --img-shadow: 0 .6rem 1rem rgb(3, 1, 1, .5);
-  --card-shadow: .5rem .5rem 1.5rem rgb(3, 1, 1, .5);
+  --img-shadow: 0 0.6rem 1rem rgb(3, 1, 1, 0.5);
+  --card-shadow: 0.5rem 0.5rem 1.5rem rgb(3, 1, 1, 0.5);
 }
 @font-face {
   font-family: "Roadstore";
@@ -47,7 +50,9 @@ p {
 span {
   font-family: var(--barlow-font);
 }
-a{cursor: pointer;}
+a {
+  cursor: pointer;
+}
 button {
   cursor: pointer;
   background-color: var(--pink-gray);

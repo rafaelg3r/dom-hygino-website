@@ -2,14 +2,48 @@
 
 const linhaBoutique = document.getElementById("linhaBoutique")
 const linhaNovilhoJovem = document.getElementById("linhaNovilhoJovem")
-const linhaCampoNobre = document.getElementById("linhaCampoNobre")
+const linhaChurrasco = document.getElementById("linhaChurrasco")
 const linhaPampeira = document.getElementById("linhaPampeira")
 const linhaProdutos = document.getElementById("linhaProdutos")
 
+const menuBanner = document.querySelector(".menu-banner")
+const bannerTitlePicture = document.querySelector(".menu-title")
+const bannerTitle = document.getElementById("banner-title")
+const bannerImagePicture = document.querySelector(".menu-banner-steak")
+const bannerImage = document.getElementById("banner-image")
+
+
 const cardsContainer = document.querySelector(".menu-cards-container")
 const card = document.querySelector(".menu-card")
-// const linhaSelectedSpan = document.querySelector(".menu-selected")
-// const linhaSelected =
+
+
+const linhaBoutiqueCards = {
+  card1: {
+    imgSrc: "./src/assets/menu/menu-card-denver.png",
+    title: "Denver",
+    description: "Maciez e sabor suave",
+  },
+  card2: {
+    imgSrc: "./src/assets/menu/menu-card-cowboy.png",
+    title: "Cowboy",
+    description: "Suculento, macio e saboroso",
+  },
+  card3: {
+    imgSrc: "./src/assets/menu/menu-card-shoulder.png",
+    title: "Shoulder",
+    description: "Maciez e sabor suave",
+  },
+  card4: {
+    imgSrc: "./src/assets/menu/menu-card-steak.png",
+    title: "Steak Shoulder",
+    description: "Suculento, macio e saboroso",
+  },
+  card5: {
+    imgSrc: "./src/assets/menu/menu-card-house-rib.png",
+    title: "House Rib",
+    description: "Suculento, macio e saboroso",
+  },
+}
 const linhaNovilhoJovemCards = {
   card1: {
     imgSrc: "./src/assets/menu/menu-card-contrafile.png",
@@ -17,30 +51,8 @@ const linhaNovilhoJovemCards = {
     description: "Suculento, macio e saboroso",
   },
   card2: {
-    imgSrc: "./src/assets/menu/menu-card-maminha.png",
-    title: "Maminha",
-    description: "Maciez e sabor suave",
-  },
-  card3: {
     imgSrc: "./src/assets/menu/menu-card-picanha.png",
     title: "Picanha",
-    description: "Suculento, macio e saboroso",
-  },
-  card4: {
-    imgSrc: "./src/assets/menu/menu-card-vazio.png",
-    title: "Vazio",
-    description: "Maciez e sabor suave",
-  },
-}
-const linhaBoutiqueCards = {
-  card1: {
-    imgSrc: "./src/assets/menu/menu-card-vazio.png",
-    title: "Vazio",
-    description: "Maciez e sabor suave",
-  },
-  card2: {
-    imgSrc: "./src/assets/menu/menu-card-contrafile.png",
-    title: "Contrafilé",
     description: "Suculento, macio e saboroso",
   },
   card3: {
@@ -49,87 +61,50 @@ const linhaBoutiqueCards = {
     description: "Maciez e sabor suave",
   },
   card4: {
-    imgSrc: "./src/assets/menu/menu-card-picanha.png",
-    title: "Picanha",
+    imgSrc: "./src/assets/menu/menu-card-entrecot.png",
+    title: "Entrecot",
     description: "Suculento, macio e saboroso",
+  },
+  card5: {
+    imgSrc: "./src/assets/menu/menu-card-vazio.png",
+    title: "Vazio",
+    description: "Maciez e sabor suave",
   },
 }
 const linhaPampeiraCards = {
   card1: {
-    imgSrc: "./src/assets/menu/menu-card-picanha.png",
-    title: "Picanha",
+    imgSrc: "./src/assets/menu/menu-card-alcatra.png",
+    title: "Alcatra",
     description: "Suculento, macio e saboroso",
-  },
-
-  card2: {
-    imgSrc: "./src/assets/menu/menu-card-contrafile.png",
-    title: "Contrafilé",
-    description: "Suculento, macio e saboroso",
-  },
-  card3: {
-    imgSrc: "./src/assets/menu/menu-card-maminha.png",
-    title: "Maminha",
-    description: "Maciez e sabor suave",
-  },
-  card4: {
-    imgSrc: "./src/assets/menu/menu-card-vazio.png",
-    title: "Vazio",
-    description: "Maciez e sabor suave",
   },
 }
-const linhaCampoNobreCards = {
+const linhaChurrascoCards = {
   card1: {
-    imgSrc: "./src/assets/menu/menu-card-picanha.png",
-    title: "Picanha",
+    imgSrc: "./src/assets/menu/menu-card-costela-grill.png",
+    title: "Costela Grill",
     description: "Suculento, macio e saboroso",
   },
 
   card2: {
-    imgSrc: "./src/assets/menu/menu-card-contrafile.png",
-    title: "Contrafilé",
+    imgSrc: "./src/assets/menu/menu-card-costela-em-tira.png",
+    title: "Costela em Tira",
     description: "Suculento, macio e saboroso",
-  },
-  card3: {
-    imgSrc: "./src/assets/menu/menu-card-maminha.png",
-    title: "Maminha",
-    description: "Maciez e sabor suave",
-  },
-  card4: {
-    imgSrc: "./src/assets/menu/menu-card-vazio.png",
-    title: "Vazio",
-    description: "Maciez e sabor suave",
   },
 }
 const linhaProdutosCards = {
-  card1: {
-    imgSrc: "./src/assets/menu/menu-card-picanha.png",
-    title: "Picanha",
-    description: "Suculento, macio e saboroso",
-  },
-
-  card2: {
-    imgSrc: "./src/assets/menu/menu-card-contrafile.png",
-    title: "Contrafilé",
-    description: "Suculento, macio e saboroso",
-  },
-  card3: {
-    imgSrc: "./src/assets/menu/menu-card-maminha.png",
-    title: "Maminha",
-    description: "Maciez e sabor suave",
-  },
-  card4: {
-    imgSrc: "./src/assets/menu/menu-card-vazio.png",
-    title: "Vazio",
-    description: "Maciez e sabor suave",
-  },
+  
 }
 const todasAsLinhasCards = {
-  
+  linhaBoutiqueCRD: linhaBoutiqueCards,
+  linhaNovilhoJovemCRD: linhaNovilhoJovemCards,
+  linhaChurrascoCRD: linhaChurrascoCards,
+  linhaPampeiraCRD: linhaPampeiraCards,
+  linhaProdutosCRD: linhaProdutosCards,
 }
 
 const linhaClicada = sessionStorage.getItem("linhaSelecionada")
 console.log(linhaClicada)
-let linhaSelected; // variavel que guarda o objeto de um card de uma das linhas selecionadas
+let linhaSelected // variavel que guarda o objeto de um card de uma das linhas selecionadas
 function cardsLoad(linhaSelected) {
   cardsContainer.innerHTML = ""
   console.log(linhaSelected)
@@ -182,10 +157,10 @@ if (linhaClicada === "linhaBoutique") {
   linhaNovilhoJovem.classList.add("menu-selected")
   cardsLoad(linhaNovilhoJovemCards)
   linhaSelected = linhaNovilhoJovemCards
-} else if (linhaClicada === "linhaCampoNobre") {
-  linhaCampoNobre.classList.add("menu-selected")
-  cardsLoad(linhaCampoNobreCards)
-  linhaSelected = linhaCampoNobreCards
+} else if (linhaClicada === "linhaChurrasco") {
+  linhaChurrasco.classList.add("menu-selected")
+  cardsLoad(linhaChurrascoCards)
+  linhaSelected = linhaChurrascoCards
 } else if (linhaClicada === "linhaPampeira") {
   linhaPampeira.classList.add("menu-selected")
   cardsLoad(linhaPampeiraCards)
@@ -206,32 +181,32 @@ const allLinhaCards = [
   linhaNovilhoJovemCards,
   linhaBoutiqueCards,
   linhaPampeiraCards,
-  linhaCampoNobreCards,
+  linhaChurrascoCards,
   linhaProdutosCards,
 ]
 const linhas = [
   linhaBoutique,
   linhaNovilhoJovem,
-  linhaCampoNobre,
+  linhaChurrasco,
   linhaPampeira,
   linhaProdutos,
 ]
 
-  linhas.forEach((linha) => {
-    if (linha.classList.contains("menu-selected")) {
-      console.log("Linha selecionada:", linha.id)
-      let linhaSelected = eval(`${linha.id}Cards`)
-      cardsLoad(linhaSelected)
-    }
-    linha.addEventListener("click", () => {
-      linhas.forEach((item) => item.classList.remove("menu-selected"))
-      linha.classList.add("menu-selected")
-      // linhaSelectedSpan.textContent = linha.textContent
-      let linhaSelected = eval(`${linha.id}Cards`)
-      cardsLoad(linhaSelected)
-      console.log(linhaSelected)
-    })
+linhas.forEach((linha) => {
+  if (linha.classList.contains("menu-selected")) {
+    console.log("Linha selecionada:", linha.id)
+    let linhaSelected = eval(`${linha.id}Cards`)
+    cardsLoad(linhaSelected)
+  }
+  linha.addEventListener("click", () => {
+    linhas.forEach((item) => item.classList.remove("menu-selected"))
+    linha.classList.add("menu-selected")
+    // linhaSelectedSpan.textContent = linha.textContent
+    let linhaSelected = eval(`${linha.id}Cards`)
+    cardsLoad(linhaSelected)
+    console.log(linhaSelected)
   })
+})
 // filtros
 const filtroRecomendados = document.getElementById("filtro-recomendados")
 // const recomendados = [1, 2, 3, 4, 5, 6]
