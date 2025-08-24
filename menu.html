@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Produtos</title>
     <link rel="stylesheet" href="./src/styles/menu/menu-style.css" />
+    <link
+      rel="shortcut icon"
+      href="src/assets/pin-dom-icon-no-bg.svg"
+      type="image/x-icon"
+    />
   </head>
   <body id="home">
     <header>
@@ -28,16 +33,19 @@
             <div class="produtos-list-wrapper hidden">
               <div class="blank-space"></div>
               <div class="produtos-list">
-                <a href="linha-novilho-jovem" class="produtos-list-item"
-                  >Linha Novilho Jovem</a
-                >
-                <a href="linha-pampeira" class="produtos-list-item"
-                  >Linha Pompeira</a
-                >
-                <a href="linha-boutique" class="produtos-list-item"
+                <a href="menu.html" class="produtos-list-item"
                   >Linha Boutique</a
                 >
-                <a href="produtos" class="produtos-list-item">Produtos</a>
+                <a href="menu.html" class="produtos-list-item"
+                  >Linha Novilho Jovem</a
+                >
+                <a href="menu.html" class="produtos-list-item"
+                  >Linha Churrasco</a
+                >
+                <a href="menu.html" class="produtos-list-item"
+                  >Linha Pampeira</a
+                >
+                <a href="menu.html" class="produtos-list-item">Produtos</a>
               </div>
             </div>
           </div>
@@ -105,7 +113,8 @@
               media="(min-width: 1081px)"
               srcset="./src/assets/menu/text-linha-N-J.png"
             />
-            <img id="banner-title"
+            <img
+              id="banner-title"
               src="./src/assets/menu/text-linha-N-J.png"
               alt="Linha novilho jovem"
             />
@@ -116,7 +125,7 @@
               srcset="./src/assets/menu/contra-file-banner-image.png"
             />
             <img
-            class="banner-image"
+              class="banner-image"
               src="./src/assets/menu/contra-file-banner-image.png"
               alt="carne contra file"
             />
@@ -148,8 +157,49 @@
           <div class="menu-content">
             <div class="menu-cards-container"></div>
           </div>
-          <div class="menu-display">
-            <h1>Em breve</h1>
+          <div id="display" class="menu-display">
+            <div class="display-main-information">
+              <h1 class="silver-gradient-right">Contrafile</h1>
+              <img
+                src="./src/assets/menu/display/contrafile-display.png"
+                alt=""
+              />
+              <p class="silver-gradient-mid">
+                “Corte nobre da lombar, o contrafilé tem uma capa de gordura que
+                derrete no preparo, realçando o sabor e garantindo maciez.”
+              </p>
+            </div>
+
+            <div class="acompanhamentos-container">
+              <span class="silver-gradient-right">acompanhamentos</span>
+              <div class="acompanhamento">
+                <div class="display-icon-container">
+                  <img src="./src/assets/menu/display/pizza-icon.svg" alt="" />
+                </div>
+                <p>Farofa crocante</p>
+              </div>
+              <div class="acompanhamento">
+                <div class="display-icon-container">
+                  <img src="./src/assets/menu/display/pizza-icon.svg" alt="" />
+                </div>
+                <p>Acompanhamento 2</p>
+              </div>
+            </div>
+            <div class="harmonizacoes-container">
+              <span class="silver-gradient-right">harmonizações</span>
+              <div class="harmonizacao">
+                <div class="display-icon-container">
+                  <img src="./src/assets/menu/display/molho-icon.svg" alt="" />
+                </div>
+                <p>Molho barbecue artesanal</p>
+              </div>
+              <div class="harmonizacao">
+                <div class="display-icon-container">
+                  <img src="./src/assets/menu/display/bebida-icon.svg" alt="" />
+                </div>
+                <p>Harmonização 2</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -204,6 +254,7 @@
     </footer>
 
     <script src="./src/js/main.js" type="module"></script>
+    <script src="./src/js/menu-display.js" type="module"></script>
     <script src="./src/js/menu.js" type="module"></script>
   </body>
 </html>

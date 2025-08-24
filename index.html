@@ -27,7 +27,6 @@
     <header>
       <a href="./index.html">
         <img
-          loading="lazy"
           class="logo"
           src="./src/assets/Dom-logo-white.png"
           alt="Logo pequena da loja de carnes Dom Hygino"
@@ -46,18 +45,19 @@
             <div class="produtos-list-wrapper hidden">
               <div class="blank-space"></div>
               <div class="produtos-list">
-                <a href="menu.html" class="produtos-list-item"
-                  >Linha Novilho Jovem</a
-                >
-                <a href="menu.html" class="produtos-list-item"
-                  >Linha Pompeira</a
-                >
-                <a href="menu.html" class="produtos-list-item"
+                <a onClick="setLinha('linhaBoutique')" href="menu.html" class="produtos-list-item"
                   >Linha Boutique</a
                 >
-                <a href="menu.html" class="produtos-list-item"
-                  >Produtos</a
+                <a onClick="setLinha('linhaNovilhoJovem')" href="menu.html" class="produtos-list-item"
+                  >Linha Novilho Jovem</a
                 >
+                <a onClick="setLinha('linhaChurrasco')" href="menu.html" class="produtos-list-item"
+                  >Linha Churrasco</a
+                >
+                <a onClick="setLinha('linhaPampeira')" href="menu.html" class="produtos-list-item"
+                  >Linha Pampeira</a
+                >
+                <a onClick="setLinha('linhaProdutos')" href="menu.html" class="produtos-list-item">Produtos</a>
               </div>
             </div>
           </div>
@@ -68,7 +68,6 @@
           <a class="line-link" href="indisponivel.html">seja um franqueado</a>
           <a href="https://linktr.ee/domhygino" target="_blank">
             <img
-              loading="lazy"
               class="instagram-icon"
               src="./src/assets/instagram.svg"
               width="36px"
@@ -79,7 +78,6 @@
         </div>
       </nav>
       <img
-        loading="lazy"
         id="header-options"
         src="./src/assets/header-options.svg"
         class="media-hidden"
@@ -97,7 +95,6 @@
         <div class="produtos-burguer-text">
           <a href="menu.html">produtos</a>
           <img
-            loading="lazy"
             src="./src/assets/down-arrow.png"
             alt="Ponta de seta apontando para baixo"
           />
@@ -199,7 +196,12 @@
           <div class="menu-text">
             <h2 class="silver-gradient-left">linha boutique</h2>
             <p>
-              A Linha Boutique representa o mais alto padrão em cortes premium, com acabamento de gordura uniforme de grau 4 a grau 5. Com excelente mármoreio e suculência, é indicada para quem busca uma experiência gastronômica fora da curva. Proveniente de animais de 18 a 24 meses, criados sob os cuidados da Fazenda Campo Nobre no Rio Grande do Sul, destacando o melhor da carne Angus gaúcha.
+              A Linha Boutique representa o mais alto padrão em cortes premium,
+              com acabamento de gordura uniforme de grau 4 a grau 5. Com
+              excelente mármoreio e suculência, é indicada para quem busca uma
+              experiência gastronômica fora da curva. Proveniente de animais de
+              18 a 24 meses, criados sob os cuidados da Fazenda Campo Nobre no
+              Rio Grande do Sul, destacando o melhor da carne Angus gaúcha.
             </p>
             <a onClick="setLinha('linhaBoutique')" href="menu.html">
               <button>--- Acessar Linha ---</button>
@@ -210,7 +212,12 @@
           <div class="menu-text">
             <h2 class="silver-gradient-right">linha novilho Jovem</h2>
             <p>
-              A Linha Novilho Jovem traz cortes selecionados de animais britânicos, como Angus, Hereford e Brangus, com idade entre 24 e 36 meses. Garante maciez, suculência e sabor incomparável, sendo a escolha ideal tanto para o churrasco quanto para o dia a dia. É uma linha versátil que une tradição e qualidade para todos os momentos.
+              A Linha Novilho Jovem traz cortes selecionados de animais
+              britânicos, como Angus, Hereford e Brangus, com idade entre 24 e
+              36 meses. Garante maciez, suculência e sabor incomparável, sendo a
+              escolha ideal tanto para o churrasco quanto para o dia a dia. É
+              uma linha versátil que une tradição e qualidade para
+              todos os momentos.
             </p>
             <a onClick="setLinha('linhaNovilhoJovem')" href="menu.html"
               ><button class="right-btn">--- Acessar Linha ---</button></a
@@ -221,7 +228,10 @@
           <div class="menu-text">
             <h2 class="silver-gradient-left">linha Churrasco</h2>
             <p>
-              A Linha Churrasco oferece cortes tradicionais que carregam a essência da culinária gaúcha. Reconhecida pelo preço competitivo e pelo verdadeiro sabor do Sul, é a linha que valoriza a tradição, a rusticidade e o gosto autêntico da carne bem feita.
+              A Linha Churrasco oferece cortes tradicionais que carregam a
+              essência da culinária gaúcha. Reconhecida pelo preço competitivo e
+              pelo verdadeiro sabor do Sul, é a linha que valoriza a tradição, a
+              rusticidade e o gosto autêntico da carne bem feita.
             </p>
             <a onClick="setLinha('linhaChurrasco')" href="menu.html"
               ><button>--- Acessar Linha ---</button></a
@@ -232,7 +242,10 @@
           <div class="menu-text">
             <h2 class="silver-gradient-right">linha Pampeira</h2>
             <p>
-              A Linha Pampeira é a escolha perfeita para o dia a dia, unindo sabor e economia sem abrir mão da qualidade. Oferece cortes economy, ideais para refeições práticas e acessíveis, mantendo o verdadeiro gosto da carne bem preparada.
+              A Linha Pampeira é a escolha perfeita para o dia a dia, unindo
+              sabor e economia sem abrir mão da qualidade. Oferece cortes
+              economy, ideais para refeições práticas e acessíveis, mantendo o
+              verdadeiro gosto da carne bem preparada.
             </p>
             <a onClick="setLinha('linhaPampeira')" href="menu.html"
               ><button class="right-btn">--- Acessar Linha ---</button></a

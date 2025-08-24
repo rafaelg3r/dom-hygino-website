@@ -1,0 +1,70 @@
+.menu-display {
+  display: flex;
+  flex-direction: column;
+  flex: 4.5;
+  padding: 3rem 4rem;
+
+  margin: 1rem 1rem 1.5rem 0;
+  background-image: url("../../assets/menu/display-noise-bg.png");
+  background-color: var(--dark-pink-gray);
+  border-radius: 0.8rem;
+
+  .display-main-information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    h1 {
+      font-size: 3.6rem;
+      font-weight: 400;
+    }
+    img {
+      max-height: 27.7rem;
+      filter: drop-shadow(0 0.6rem 1rem rgba(0, 0, 0, 0.5));
+    }
+    p {
+      font-size: 1.6rem;
+      font-weight: 600;
+      line-height: 1.55rem;
+      padding-bottom: .5rem;
+    }
+  }
+  .acompanhamentos-container,
+  .harmonizacoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    span {
+      max-width: fit-content;
+      font-size: 2.4rem;
+      font-weight: 600;
+      font-variant: small-caps;
+      margin-top: 3rem;
+    }
+    .acompanhamento,
+    .harmonizacao {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+
+      p {
+        font-size: 2rem;
+        font-weight: 600;
+        letter-spacing: 0.16rem;
+      }
+    }
+  }
+  .display-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 0.6rem;
+    padding: 0.8rem;
+    background-color: var(--pink-gray);
+    img {
+      max-width: 2.4rem;
+      max-height: 2.4rem;
+    }
+  }
+}

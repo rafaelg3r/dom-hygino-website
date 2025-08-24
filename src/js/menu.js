@@ -1,4 +1,5 @@
 "use strict"
+import { carnesDescriptions } from "./menu-display.js"
 
 const linhaBoutique = document.getElementById("linhaBoutique")
 const linhaNovilhoJovem = document.getElementById("linhaNovilhoJovem")
@@ -11,11 +12,10 @@ const bannerTitlePicture = document.querySelector(".menu-title")
 const bannerTitle = document.getElementById("banner-title")
 const bannerImagePicture = document.querySelector(".menu-banner-steak")
 const bannerImage = document.getElementById("banner-image")
-
+const bannerSource = bannerTitlePicture.querySelector("source")
 
 const cardsContainer = document.querySelector(".menu-cards-container")
 const card = document.querySelector(".menu-card")
-
 
 const linhaBoutiqueCards = {
   card1: {
@@ -91,9 +91,7 @@ const linhaChurrascoCards = {
     description: "Suculento, macio e saboroso",
   },
 }
-const linhaProdutosCards = {
-  
-}
+const linhaProdutosCards = {}
 const todasAsLinhasCards = {
   linhaBoutiqueCRD: linhaBoutiqueCards,
   linhaNovilhoJovemCRD: linhaNovilhoJovemCards,
@@ -103,15 +101,53 @@ const todasAsLinhasCards = {
 }
 
 const linhaClicada = sessionStorage.getItem("linhaSelecionada")
-console.log(linhaClicada)
+
+let linhaAtual = linhaClicada.replace("linha", "") || "Boutique"
+updateBanner(linhaAtual)
+function updateBanner(linha) {
+  switch (linha) {
+    case "Pampeira":
+      bannerSource.srcset = "./src/assets/menu/text-linha-Pampeira.png"
+      bannerTitle.src = "./src/assets/menu/text-linha-Pampeira.png"
+      bannerTitle.alt = "Linha Pampeira"
+      break
+
+    case "NovilhoJovem":
+      bannerSource.srcset = "./src/assets/menu/text-linha-N-J.png"
+      bannerTitle.src = "./src/assets/menu/text-linha-N-J.png"
+      bannerTitle.alt = "Linha Novilho Jovem"
+      break
+
+    case "Churrasco":
+      bannerSource.srcset = "./src/assets/menu/text-linha-Churrasco.png"
+      bannerTitle.src = "./src/assets/menu/text-linha-Churrasco.png"
+      bannerTitle.alt = "Linha Churrasco"
+      break
+
+    case "Produtos":
+      bannerSource.srcset = "./src/assets/menu/text-produtos.png"
+      bannerTitle.src = "./src/assets/menu/text-produtos.png"
+      bannerTitle.alt = "Produtos"
+      break
+
+    default: // fallback (Boutique)
+      bannerSource.srcset = "./src/assets/menu/text-linha-Boutique.png"
+      bannerTitle.src = "./src/assets/menu/text-linha-Boutique.png"
+      bannerTitle.alt = "Linha Boutique"
+  }
+}
+
 let linhaSelected // variavel que guarda o objeto de um card de uma das linhas selecionadas
 function cardsLoad(linhaSelected) {
   cardsContainer.innerHTML = ""
-  console.log(linhaSelected)
 
   Object.values(linhaSelected).forEach((card) => {
     const menuCard = document.createElement("div")
     menuCard.classList.add("menu-card")
+    // menuCard.addEventListener("click", () => {
+    //   const cardSelected = card.title
+    //   console.log(cardSelected)
+    // })
 
     const cardImg = document.createElement("img")
     cardImg.src = card.imgSrc
@@ -174,16 +210,9 @@ if (linhaClicada === "linhaBoutique") {
   linhaBoutique.classList.add("menu-selected")
   cardsLoad(linhaBoutiqueCards)
   linhaSelected = linhaBoutiqueCards
-  console.log(linhaSelected)
 }
 
-const allLinhaCards = [
-  linhaNovilhoJovemCards,
-  linhaBoutiqueCards,
-  linhaPampeiraCards,
-  linhaChurrascoCards,
-  linhaProdutosCards,
-]
+
 const linhas = [
   linhaBoutique,
   linhaNovilhoJovem,
@@ -196,7 +225,10 @@ linhas.forEach((linha) => {
   if (linha.classList.contains("menu-selected")) {
     console.log("Linha selecionada:", linha.id)
     let linhaSelected = eval(`${linha.id}Cards`)
+
     cardsLoad(linhaSelected)
+
+    updateBanner(linha.id.replace("linha", ""))
   }
   linha.addEventListener("click", () => {
     linhas.forEach((item) => item.classList.remove("menu-selected"))
@@ -204,7 +236,7 @@ linhas.forEach((linha) => {
     // linhaSelectedSpan.textContent = linha.textContent
     let linhaSelected = eval(`${linha.id}Cards`)
     cardsLoad(linhaSelected)
-    console.log(linhaSelected)
+    updateBanner(linha.id.replace("linha", ""))
   })
 })
 // filtros
@@ -222,3 +254,106 @@ menuFiltros.forEach((filtro) => {
     filtro.classList.add("menu-selected")
   })
 })
+
+//? Display
+const display = document.getElementById("display")
+// capturando o card clicado para exibir as informações no display
+cardsContainer.addEventListener("click", (event) => {
+  const cardSelected = event.target.closest(".menu-card")
+  if (cardSelected) {
+    const cardSelectedName = cardSelected
+      .querySelector("h3")
+      .textContent.replace(/\s+/g, "")
+    const cardImgSrc = cardSelected.querySelector("img").src
+    console.log(cardSelectedName)
+    displayLoad(cardSelectedName, cardImgSrc, carnesDescriptions)
+  }
+})
+
+function displayLoad(cardSelectedName, cardImgSrc, carnesDescriptions) {
+  display.innerHTML = ""
+
+  const displayMainInformation = document.createElement("div")
+  displayMainInformation.classList.add("display-main-information")
+
+  const displayTitle = document.createElement("h1")
+  displayTitle.textContent = cardSelectedName
+  displayTitle.classList.add("silver-gradient-right")
+
+  const displayImgContainer = document.createElement("div")
+
+  const displayImg = document.createElement("img")
+  displayImg.src = cardImgSrc
+
+  const displayDescription = document.createElement("p")
+  displayDescription.textContent = `“${carnesDescriptions[cardSelectedName].description}”`
+  displayDescription.classList.add("silver-gradient-mid")
+
+  const acompanhamentosContainer = document.createElement("div")
+  acompanhamentosContainer.classList.add("acompanhamentos-container")
+  const acompanhamentosSpan = document.createElement("span")
+  acompanhamentosSpan.classList.add("silver-gradient-right")
+  acompanhamentosSpan.textContent = "acompanhamentos"
+  const acompanhamentosList = document.createElement("div")
+  acompanhamentosList.classList.add("acompanhamento")
+  const acompanhamentoIconContainer = document.createElement("div")
+  acompanhamentoIconContainer.classList.add("display-icon-container")
+
+  const acompanhamentoIcon = document.createElement("img")
+  acompanhamentoIcon.src =
+    carnesDescriptions[cardSelectedName].acompanhamentos.acomp1.acompIcon
+  console.log(acompanhamentoIcon.src)
+  const acompanhamentoName = document.createElement("p")
+  acompanhamentoName.textContent =
+    carnesDescriptions[cardSelectedName].acompanhamentos.acomp1.acompName
+
+  const harmonizacoesContainer = document.createElement("div")
+  harmonizacoesContainer.classList.add("harmonizacoes-container")
+
+  const harmonizacoesSpan = document.createElement("span")
+  harmonizacoesSpan.classList.add("silver-gradient-right")
+  harmonizacoesSpan.textContent = "harmonizações"
+
+  harmonizacoesContainer.appendChild(harmonizacoesSpan)
+
+  // pega todas as harmonizações do card
+  const harmonizacoes = carnesDescriptions[cardSelectedName].harmonizacoes
+
+  Object.values(harmonizacoes).forEach((harm) => {
+    const harmonizacoesList = document.createElement("div")
+    harmonizacoesList.classList.add("harmonizacao")
+
+    const harmonizacaoIconContainer = document.createElement("div")
+    harmonizacaoIconContainer.classList.add("display-icon-container")
+
+    const harmonizacaoIcon = document.createElement("img")
+    harmonizacaoIcon.src = harm.harmIcon
+
+    const harmonizacaoName = document.createElement("p")
+    harmonizacaoName.textContent = harm.harmName
+
+    harmonizacaoIconContainer.appendChild(harmonizacaoIcon)
+    harmonizacoesList.appendChild(harmonizacaoIconContainer)
+    harmonizacoesList.appendChild(harmonizacaoName)
+
+    harmonizacoesContainer.appendChild(harmonizacoesList)
+  })
+
+  acompanhamentoIconContainer.appendChild(acompanhamentoIcon)
+
+  acompanhamentosList.appendChild(acompanhamentoIconContainer)
+  acompanhamentosList.appendChild(acompanhamentoName)
+
+  acompanhamentosContainer.appendChild(acompanhamentosSpan)
+  acompanhamentosContainer.appendChild(acompanhamentosList)
+
+  displayImgContainer.appendChild(displayImg)
+
+  displayMainInformation.appendChild(displayTitle)
+  displayMainInformation.appendChild(displayImgContainer)
+  displayMainInformation.appendChild(displayDescription)
+
+  display.appendChild(displayMainInformation)
+  display.appendChild(acompanhamentosContainer)
+  display.appendChild(harmonizacoesContainer)
+}
