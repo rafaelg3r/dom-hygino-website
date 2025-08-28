@@ -92,24 +92,18 @@ const linhaChurrascoCards = {
   },
 }
 const linhaProdutosCards = {}
-const todasAsLinhasCards = {
-  linhaBoutiqueCRD: linhaBoutiqueCards,
-  linhaNovilhoJovemCRD: linhaNovilhoJovemCards,
-  linhaChurrascoCRD: linhaChurrascoCards,
-  linhaPampeiraCRD: linhaPampeiraCards,
-  linhaProdutosCRD: linhaProdutosCards,
-}
 
-const linhaClicada = sessionStorage.getItem("linhaSelecionada")
+const linhaClicada =
+  sessionStorage.getItem("linhaSelecionada") || "linhaBoutique"
 
 let linhaAtual = linhaClicada.replace("linha", "") || "Boutique"
 updateBanner(linhaAtual)
 function updateBanner(linha) {
   switch (linha) {
     case "Pampeira":
-      bannerSource.srcset = "./src/assets/menu/text-linha-Pampeira.png"
-      bannerTitle.src = "./src/assets/menu/text-linha-Pampeira.png"
-      bannerTitle.alt = "Linha Pampeira"
+      bannerSource.srcset = "./src/assets/menu/text-linha-pampeira.png"
+      bannerTitle.src = "./src/assets/menu/text-linha-pampeira.png"
+      bannerTitle.alt = "Linha pampeira"
       break
 
     case "NovilhoJovem":
@@ -119,8 +113,8 @@ function updateBanner(linha) {
       break
 
     case "Churrasco":
-      bannerSource.srcset = "./src/assets/menu/text-linha-Churrasco.png"
-      bannerTitle.src = "./src/assets/menu/text-linha-Churrasco.png"
+      bannerSource.srcset = "./src/assets/menu/text-linha-churrasco.png"
+      bannerTitle.src = "./src/assets/menu/text-linha-churrasco.png"
       bannerTitle.alt = "Linha Churrasco"
       break
 
@@ -131,9 +125,9 @@ function updateBanner(linha) {
       break
 
     default: // fallback (Boutique)
-      bannerSource.srcset = "./src/assets/menu/text-linha-Boutique.png"
-      bannerTitle.src = "./src/assets/menu/text-linha-Boutique.png"
-      bannerTitle.alt = "Linha Boutique"
+      bannerSource.srcset = "./src/assets/menu/text-linha-boutique.png"
+      bannerTitle.src = "./src/assets/menu/text-linha-boutique.png"
+      bannerTitle.alt = "Linha boutique"
   }
 }
 
@@ -212,7 +206,6 @@ if (linhaClicada === "linhaBoutique") {
   linhaSelected = linhaBoutiqueCards
 }
 
-
 const linhas = [
   linhaBoutique,
   linhaNovilhoJovem,
@@ -233,25 +226,9 @@ linhas.forEach((linha) => {
   linha.addEventListener("click", () => {
     linhas.forEach((item) => item.classList.remove("menu-selected"))
     linha.classList.add("menu-selected")
-    // linhaSelectedSpan.textContent = linha.textContent
     let linhaSelected = eval(`${linha.id}Cards`)
     cardsLoad(linhaSelected)
     updateBanner(linha.id.replace("linha", ""))
-  })
-})
-// filtros
-const filtroRecomendados = document.getElementById("filtro-recomendados")
-// const recomendados = [1, 2, 3, 4, 5, 6]
-
-const filtroPopulares = document.getElementById("filtro-populares")
-// const populares = []
-
-const menuFiltros = [filtroRecomendados, filtroPopulares]
-
-menuFiltros.forEach((filtro) => {
-  filtro.addEventListener("click", () => {
-    menuFiltros.forEach((item) => item.classList.remove("menu-selected"))
-    filtro.classList.add("menu-selected")
   })
 })
 
@@ -272,6 +249,7 @@ cardsContainer.addEventListener("click", (event) => {
 
 function displayLoad(cardSelectedName, cardImgSrc, carnesDescriptions) {
   display.innerHTML = ""
+  display.classList.remove("display-no-content")
 
   const displayMainInformation = document.createElement("div")
   displayMainInformation.classList.add("display-main-information")

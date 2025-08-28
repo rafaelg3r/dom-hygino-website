@@ -27,6 +27,7 @@
       font-weight: 600;
       line-height: 1.55rem;
       padding-bottom: .5rem;
+      text-align: center;
     }
   }
   .acompanhamentos-container,
@@ -67,4 +68,8 @@
       max-height: 2.4rem;
     }
   }
+}
+
+.display-no-content {
+  height: fit-content !important;
 }
