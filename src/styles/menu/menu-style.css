@@ -8,6 +8,7 @@
 /* Menu styles */
 @import url("./menu-main.css");
 @import url("./menu-display.css");
+@import url("./menu-animations.css");
 
 /* Mobile styles */
 @import url("../media-queries/home-media-queries.css");

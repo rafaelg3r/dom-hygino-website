@@ -335,4 +335,26 @@ function displayLoad(cardSelectedName, cardImgSrc, carnesDescriptions) {
   display.appendChild(displayMainInformation)
   display.appendChild(acompanhamentosContainer)
   display.appendChild(harmonizacoesContainer)
+
+  cardsContainer.addEventListener("click", (event) => {
+    const cardSelected = event.target.closest(".menu-card")
+    if (cardSelected) {
+      displayImg.classList.add("animation-display-img")
+    }
+  })
+  displayImg.classList.remove("animation-display-img")
+  displayImg.addEventListener("animationend", () => {
+    displayImg.classList.remove("animation-display-img")
+    displayImg.classList.add("animation-display-img")
+  })
+
+  /*************  ✨ Windsurf Command ⭐  *************/
+  const allParagraphs = display.querySelectorAll("p")
+  allParagraphs.forEach((p) => {
+    p.addEventListener("animationend", () => {
+      p.classList.remove("typewriterAnimation")
+      p.classList.add("typewriterAnimation")
+    })
+  })
+  /*******  8593c570-ded8-4fe9-a18e-a9e33ed53017 *******/
 }

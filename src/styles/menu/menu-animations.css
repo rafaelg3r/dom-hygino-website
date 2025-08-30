@@ -1,0 +1,24 @@
+@keyframes displaySelectedImagePop {
+  0% {
+    transform: scale(0);
+  }
+  70% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.animation-display-img {
+  animation: displaySelectedImagePop .8s ease;
+}
+
+@keyframes displayTypewriter {
+   from { width: 0; }
+  to { width: 100%; }
+}
+
+.typewriterAnimation {
+  animation: typewriter 5s steps(50) 1s 1 normal both,;
+}
