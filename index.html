@@ -45,19 +45,36 @@
             <div class="produtos-list-wrapper hidden">
               <div class="blank-space"></div>
               <div class="produtos-list">
-                <a onClick="setLinha('linhaBoutique')" href="menu.html" class="produtos-list-item"
+                <a
+                  onClick="setLinha('linhaBoutique')"
+                  href="menu.html"
+                  class="produtos-list-item"
                   >Linha Boutique</a
                 >
-                <a onClick="setLinha('linhaNovilhoJovem')" href="menu.html" class="produtos-list-item"
+                <a
+                  onClick="setLinha('linhaNovilhoJovem')"
+                  href="menu.html"
+                  class="produtos-list-item"
                   >Linha Novilho Jovem</a
                 >
-                <a onClick="setLinha('linhaChurrasco')" href="menu.html" class="produtos-list-item"
+                <a
+                  onClick="setLinha('linhaChurrasco')"
+                  href="menu.html"
+                  class="produtos-list-item"
                   >Linha Churrasco</a
                 >
-                <a onClick="setLinha('linhaPampeira')" href="menu.html" class="produtos-list-item"
+                <a
+                  onClick="setLinha('linhaPampeira')"
+                  href="menu.html"
+                  class="produtos-list-item"
                   >Linha Pampeira</a
                 >
-                <a onClick="setLinha('linhaProdutos')" href="menu.html" class="produtos-list-item">Produtos</a>
+                <a
+                  onClick="setLinha('linhaProdutos')"
+                  href="menu.html"
+                  class="produtos-list-item"
+                  >Produtos</a
+                >
               </div>
             </div>
           </div>
@@ -142,15 +159,22 @@
             <ul class="splide__list">
               <li class="splide__slide">
                 <img
-                  src="./src/assets/carnes/contra-file-design-3.png"
+                  src="./src/assets/carnes/contra-file-design-4.png"
                   alt="Imagem de um contrafilé"
                 />
               </li>
               <li class="splide__slide">
                 <img
                   class="image-test"
-                  src="./src/assets/carnes/contra-file-design-2.png"
+                  src="./src/assets/carnes/costela-grill-design.png"
                   alt="Imagem 2"
+                />
+              </li>
+              <li class="splide__slide">
+                <img
+                  class="image-test"
+                  src="./src/assets/carnes/steak-shoulder-design.png"
+                  alt="Imagem 3"
                 />
               </li>
             </ul>
@@ -161,7 +185,7 @@
       <img
         draggable="false"
         class="main-bg"
-        src="./src/assets/main-bg-2.png"
+        src="./src/assets/main-bg.png"
         alt="Background"
       />
     </main>
@@ -224,7 +248,7 @@
             >
           </div>
         </div>
-        <div class="linha-campo-nobre">
+        <div class="linha-churrasco">
           <div class="menu-text">
             <h2 class="silver-gradient-left">linha Churrasco</h2>
             <p>
@@ -507,7 +531,7 @@
           inabalável com o sabor e a experiência do cliente. E agora, você pode
           fazer parte dessa história de sucesso!
         </p>
-        <button>marcar uma reunião</button>
+        <a href="indisponivel.html"><button>marcar uma reunião</button></a>
       </div>
     </section>
     <footer>
@@ -531,11 +555,11 @@
             </div>
             <div class="footer-text">
               <h4>Sobre</h4>
-              <a href="#"
+              <a href="indisponivel.html"
                 >Políticas de <br />
                 privacidade</a
               >
-              <a href="#">Termos de uso</a>
+              <a href="indisponivel.html">Termos de uso</a>
             </div>
             <div class="footer-text">
               <h4>Contato</h4>
@@ -560,6 +584,7 @@
       </div>
     </footer>
 
+    <script src="./src/js/nocache.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.3/dist/js/splide.min.js"></script>
 
     <script src="./src/js/main.js" type="module"></script>
@@ -571,9 +596,30 @@
           autoplay: true,
           interval: 7000,
           arrows: false,
-          pagination: true,
+          pagination: false,
         }).mount()
       })
+    </script>
+    <script>
+      // Função para carregar CSS/JS com versão dinâmica
+      function loadFile(filename, filetype) {
+        const timestamp = new Date().getTime() // cria número único (ex: 1693412387412)
+
+        if (filetype === "js") {
+          const script = document.createElement("script")
+          script.src = filename + "?v=" + timestamp
+          document.head.appendChild(script)
+        } else if (filetype === "css") {
+          const link = document.createElement("link")
+          link.rel = "stylesheet"
+          link.href = filename + "?v=" + timestamp
+          document.head.appendChild(link)
+        }
+      }
+
+      // Carregar arquivos (sem cache)
+      loadFile("style.css", "css")
+      loadFile("script.js", "js")
     </script>
   </body>
 </html>

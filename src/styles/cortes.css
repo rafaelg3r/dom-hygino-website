@@ -36,7 +36,7 @@ section.cortes-menu {
     /* padding-top: 14.6rem; */
     .linha-boutique,
     .linha-novilho,
-    .linha-campo-nobre,
+    .linha-churrasco,
     .linha-pampeira,
     .linha-produtos {
       display: flex;
@@ -62,7 +62,7 @@ section.cortes-menu {
       }
     }
     .linha-boutique,
-    .linha-campo-nobre,
+    .linha-churrasco,
     .linha-produtos {
       justify-content: start;
       .menu-text {
@@ -77,8 +77,12 @@ section.cortes-menu {
     .linha-novilho {
       background-image: url("../assets/cortes/novilho-image-bg.png");
     }
-    .linha-campo-nobre {
-      background-image: url("../assets/cortes/boutique-image-bg.png");
+    .linha-churrasco {
+      background-image: url("../assets/cortes/churrasco-image-bg.png");
+      background-position: 0 -6rem;
+       &:hover {
+        background-position: 0 14%;
+      }
     }
     .linha-pampeira {
       background-image: url("../assets/cortes/pampeira-image-bg.png");

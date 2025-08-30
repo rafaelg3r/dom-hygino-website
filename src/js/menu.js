@@ -136,12 +136,9 @@ function cardsLoad(linhaSelected) {
   cardsContainer.innerHTML = ""
 
   Object.values(linhaSelected).forEach((card) => {
-    const menuCard = document.createElement("div")
+    const menuCard = document.createElement("a")
     menuCard.classList.add("menu-card")
-    // menuCard.addEventListener("click", () => {
-    //   const cardSelected = card.title
-    //   console.log(cardSelected)
-    // })
+    menuCard.href = "#display-focus"
 
     const cardImg = document.createElement("img")
     cardImg.src = card.imgSrc
@@ -251,6 +248,9 @@ function displayLoad(cardSelectedName, cardImgSrc, carnesDescriptions) {
   display.innerHTML = ""
   display.classList.remove("display-no-content")
 
+  const displayFocus = document.createElement("div")
+  displayFocus.id = "display-focus"
+
   const displayMainInformation = document.createElement("div")
   displayMainInformation.classList.add("display-main-information")
 
@@ -331,6 +331,7 @@ function displayLoad(cardSelectedName, cardImgSrc, carnesDescriptions) {
   displayMainInformation.appendChild(displayImgContainer)
   displayMainInformation.appendChild(displayDescription)
 
+  display.appendChild(displayFocus)
   display.appendChild(displayMainInformation)
   display.appendChild(acompanhamentosContainer)
   display.appendChild(harmonizacoesContainer)

@@ -22,7 +22,7 @@
       </a>
       <nav>
         <div class="left-nav">
-          <a class="line-link" href="index.html#home">home</a>
+          <a class="line-link" href="index.html">home</a>
           <div class="line-link nav-produtos-container">
             <span class="nav-products">produtos</span>
             <img
@@ -33,27 +33,44 @@
             <div class="produtos-list-wrapper hidden">
               <div class="blank-space"></div>
               <div class="produtos-list">
-                <a href="menu.html" class="produtos-list-item"
+                <a
+                  onClick="setLinha('linhaBoutique')"
+                  href="menu.html"
+                  class="produtos-list-item"
                   >Linha Boutique</a
                 >
-                <a href="menu.html" class="produtos-list-item"
+                <a
+                  onClick="setLinha('linhaNovilhoJovem')"
+                  href="menu.html"
+                  class="produtos-list-item"
                   >Linha Novilho Jovem</a
                 >
-                <a href="menu.html" class="produtos-list-item"
+                <a
+                  onClick="setLinha('linhaChurrasco')"
+                  href="menu.html"
+                  class="produtos-list-item"
                   >Linha Churrasco</a
                 >
-                <a href="menu.html" class="produtos-list-item"
+                <a
+                  onClick="setLinha('linhaPampeira')"
+                  href="menu.html"
+                  class="produtos-list-item"
                   >Linha Pampeira</a
                 >
-                <a href="menu.html" class="produtos-list-item">Produtos</a>
+                <a
+                  onClick="setLinha('linhaProdutos')"
+                  href="menu.html"
+                  class="produtos-list-item"
+                  >Produtos</a
+                >
               </div>
             </div>
           </div>
           <a class="line-link" href="#lojas">lojas</a>
-          <a class="line-link" href="blog">blog</a>
+          <a class="line-link" href="indisponivel.html">blog</a>
         </div>
         <div class="right-nav">
-          <a class="line-link" href="#">seja um franqueado</a>
+          <a class="line-link" href="indisponivel.html">seja um franqueado</a>
           <a href="https://linktr.ee/domhygino" target="_blank">
             <img
               class="instagram-icon"
@@ -62,7 +79,7 @@
               alt="Icone do instagram"
             />
           </a>
-          <button>Contato</button>
+          <a href="indisponivel.html"><button>Contato</button></a>
         </div>
       </nav>
       <img
@@ -122,11 +139,12 @@
           <picture class="menu-banner-steak">
             <source
               media="(min-width: 1081px)"
-              srcset="./src/assets/menu/contra-file-banner-image.png"
+              srcset="./src/assets/menu/contra-file-banner-clean.png"
             />
             <img
+              width="288px"
               class="banner-image"
-              src="./src/assets/menu/contra-file-banner-image.png"
+              src="./src/assets/menu/contra-file-banner-clean.png"
               alt="carne contra file"
             />
           </picture>
@@ -149,6 +167,7 @@
             <div class="menu-cards-container"></div>
           </div>
           <div id="display" class="menu-display display-no-content">
+            <div id="display-focus"></div>
             <strong
               class="silver-gradient-mid"
               style="
@@ -211,7 +230,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./src/js/nocache.js"></script>
     <script src="./src/js/main.js" type="module"></script>
     <script src="./src/js/menu-display.js" type="module"></script>
     <script src="./src/js/menu.js" type="module"></script>

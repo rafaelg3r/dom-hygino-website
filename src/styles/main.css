@@ -95,15 +95,7 @@ main {
         button {
           align-self: flex-end;
         }
-        .splide__pagination__page:focus-visible {
-          outline: 3px solid var(--pink-gray);
-        }
-        .splide__pagination__page {
-          background-color: var(--light-gray);
-        }
-        .is-active {
-          background-color: var(--pink-red);
-        }
+        
       }
     }
   }
