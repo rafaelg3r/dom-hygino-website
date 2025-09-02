@@ -25,7 +25,7 @@ section.about {
     gap: 1rem;
     align-items: center;
     h2 {
-      font-size: clamp(4rem, 3.54rem + 1.4286vw, 7.2rem);
+      font-size: 7.2rem;
       font-weight: 400;
     }
     span {

@@ -1,15 +1,15 @@
 /* General styles */
-@import url("../general.css");
+@import "../general.css";
 
 /* Reutilized components */
-@import url("../header.css");
-@import url("../footer.css");
+@import "../header.css";
+@import "../footer.css";
 
 /* Menu styles */
-@import url("./menu-main.css");
-@import url("./menu-display.css");
-@import url("./menu-animations.css");
+@import "./menu-main.css";
+@import "./menu-display.css";
+@import "./menu-animations.css";
 
 /* Mobile styles */
-@import url("../media-queries/home-media-queries.css");
-@import url("../media-queries/menu-media-queries.css");
+@import "../media-queries/home-media-queries.css";
+@import "../media-queries/menu-media-queries.css";

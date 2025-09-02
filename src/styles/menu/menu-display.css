@@ -30,10 +30,6 @@
       line-height: 1.55rem;
       padding-bottom: 0.5rem;
       text-align: center;
-
-      overflow: hidden;
-      transform: translateY(-50%);
-      white-space: nowrap;
     }
   }
   .acompanhamentos-container,

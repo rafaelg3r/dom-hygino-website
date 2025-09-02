@@ -1,14 +1,14 @@
 /* General styles */
-@import url("./general.css");
+@import "./general.css";
 
 /* Home styles */
-@import url("./header.css");
-@import url("./main.css");
-@import url("./apresentation.css");
-@import url("./cortes.css");
-@import url("./lojas.css");
-@import url("./about.css");
-@import url("./franqueado.css");
-@import url("./footer.css");
+@import "./header.css";
+@import "./main.css";
+@import "./apresentation.css";
+@import "./cortes.css";
+@import "./lojas.css";
+@import "./about.css";
+@import "./franqueado.css";
+@import "./footer.css";
 
 /* Mobile styles */

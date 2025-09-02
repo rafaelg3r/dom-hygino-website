@@ -1,102 +1,110 @@
-@import url("./general.css");
-
 main {
   height: 84.7rem;
   position: relative;
-  .main-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    object-fit: cover;
-  }
-  .main-bg-fade {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    object-fit: cover;
-  }
-  .bg-light {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 67.4rem;
-    z-index: -1;
-  }
+}
+.main-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  object-fit: cover;
+}
 
-  .hero {
-    padding: 0 12rem;
-    display: flex;
-    justify-content: space-between;
-    .hero-text {
-      padding-top: 20rem;
-      display: flex;
-      flex-flow: column;
+.main-bg-fade {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
 
-      h1 {
-        font-family: var(--barlow-font);
-        font-size: 1.6rem;
-        font-weight: 600;
-        letter-spacing: 8px;
-        text-transform: uppercase;
-      }
-      strong {
-        font-size: clamp(3.2rem, 2rem + 3.75vw, 8rem);
-        font-family: var(--roadstore-font);
-        font-weight: 400;
-        width: max-content;
-      }
-      p {
-        margin-top: 2rem;
-        margin-bottom: 3rem;
-        max-width: 64.3rem;
-        font-size: 2.4rem;
-        letter-spacing: 0.16px;
-        line-height: 31.2px;
-      }
-      .hero-btns {
-        display: flex;
-        gap: 4.5rem;
-        button {
-          padding: 1.8rem 4rem;
-          font-size: 1.8rem;
+.bg-light {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 67.4rem;
+  z-index: -1;
+}
 
-          transition: transform 0.2s ease-in-out, filter 0.3s ease;
-          &:hover {
-            transform: scale(1.05);
-          }
-        }
-      }
-    }
-   
-    .hero-slider {
-      margin-top: 10rem;
-    }
-    .splide {
-      max-width: 50rem;
-      max-height: 50rem;
-      li {
-        display: flex;
-        height: 60rem;
-        justify-content: center;
-        align-items: center;
+.hero {
+  padding: 0 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        img {
-          width: auto;
-          height: 48rem;
-          /* filter: drop-shadow(-1rem 1rem 3rem rgba(0, 0, 0, 0.8)); */
-          z-index: 2;
-        }
-        button {
-          align-self: flex-end;
-        }
-        
-      }
-    }
-  }
+.hero-text {
+  padding-top: 20rem;
+  display: flex;
+  flex-flow: column;
+}
+
+.hero-text h1 {
+  font-family: var(--barlow-font);
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.hero-text strong {
+  font-size: 8rem;
+  font-family: var(--roadstore-font);
+  font-weight: 400;
+  width: max-content;
+}
+
+.hero-text p {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  max-width: 64.3rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.16px;
+  line-height: 31.2px;
+}
+
+.hero-btns {
+  display: flex;
+  gap: 4.5rem;
+}
+
+.hero-btns button {
+  padding: 1.8rem 4rem;
+  font-size: 1.8rem;
+
+  transition: transform 0.2s ease-in-out, filter 0.3s ease;
+}
+
+.hero-btns button:hover {
+  transform: scale(1.05);
+}
+
+.hero-btns button:not(.border-btn) {
+  padding: 2.2rem 4rem;
+}
+
+.hero-slider {
+
+  margin-top: 20rem;
+}
+
+.splide {
+  max-width: 45rem;
+  max-height: 45rem;
+}
+
+.splide li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.splide li img {
+  width: auto;
+  height: 40rem;
+  z-index: 2;
 }

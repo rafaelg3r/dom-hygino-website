@@ -336,25 +336,55 @@ function displayLoad(cardSelectedName, cardImgSrc, carnesDescriptions) {
   display.appendChild(acompanhamentosContainer)
   display.appendChild(harmonizacoesContainer)
 
-  cardsContainer.addEventListener("click", (event) => {
-    const cardSelected = event.target.closest(".menu-card")
-    if (cardSelected) {
-      displayImg.classList.add("animation-display-img")
-    }
-  })
-  displayImg.classList.remove("animation-display-img")
-  displayImg.addEventListener("animationend", () => {
-    displayImg.classList.remove("animation-display-img")
-    displayImg.classList.add("animation-display-img")
-  })
+  displayDescription.textContent = `“${carnesDescriptions[cardSelectedName].description}”`
+  displayDescription.classList.add("silver-gradient-mid")
 
-  /*************  ✨ Windsurf Command ⭐  *************/
-  const allParagraphs = display.querySelectorAll("p")
-  allParagraphs.forEach((p) => {
-    p.addEventListener("animationend", () => {
-      p.classList.remove("typewriterAnimation")
-      p.classList.add("typewriterAnimation")
+  // garante display inline-block pra animar largura
+  // --- Typewriter JS que permite wrap e tamanho normal ---
+  /* opcional: remove qualquer estilo inline que force nowrap/width */
+  displayDescription.style.display = ""
+
+  // função que escreve caractere-a-caractere e evita duplicar intervals
+  function typeWriterEffect(element, text, speedMs = 20) {
+    // cancela intervalo anterior, se houver
+    if (element._typeInterval) {
+      clearInterval(element._typeInterval)
+      element._typeInterval = null
+    }
+
+    // limpa e aplica classes de estilo (cursor)
+    element.textContent = ""
+    element.classList.add("typewriterAnimation")
+
+    let i = 0
+    element._typeInterval = setInterval(() => {
+      element.textContent += text.charAt(i)
+      i++
+      if (i >= text.length) {
+        clearInterval(element._typeInterval)
+        element._typeInterval = null
+        
+      }
+    }, speedMs)
+  }
+
+  // dispara a animação escrevendo o texto sem as aspas
+  const descricaoTexto = carnesDescriptions[cardSelectedName].description || ""
+  typeWriterEffect(displayDescription, descricaoTexto, 20)
+
+  // animação da imagem (pop) — mantém o que você já tinha
+  displayImg.classList.add("animation-display-img")
+
+  // opcional: reiniciar as animações ao clicar no display (se quiser)
+  const displayFocusElement = document.getElementById("display-focus")
+  if (displayFocusElement) {
+    displayFocusElement.addEventListener("click", () => {
+      typeWriterEffect(displayDescription, descricaoTexto, 20)
+      // re-aplica pop image
+      displayImg.classList.remove("animation-display-img")
+      // força reflow e reaplica
+      void displayImg.offsetWidth
+      displayImg.classList.add("animation-display-img")
     })
-  })
-  /*******  8593c570-ded8-4fe9-a18e-a9e33ed53017 *******/
+  }
 }

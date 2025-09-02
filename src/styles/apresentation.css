@@ -3,9 +3,10 @@
 section.apresentation {
   display: flex;
   justify-content: center;
-  gap: 10rem;
+  gap: 8rem;
   padding: 5rem 16rem 15rem 16rem;
   align-items: center;
+  text-align: center;
   
   .apresentation-logo {
     width: 53.6rem;
