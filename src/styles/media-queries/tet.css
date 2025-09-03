@@ -1,35 +1,21 @@
 /* @import url("../style.css"); */
 
 @media (max-width: 1410px) {
-  main {
-    .hero {
-      justify-content: space-between;
-      .hero-text {
-        .hero-btns {
-          button {
-            padding: 1.8rem 3rem;
-          }
-        }
-      }
-    }
+  main .hero {
+    justify-content: space-between;
   }
-  section.cortes-menu {
-    div.cortes-menu-container {
-      h2.cortes-menu-title {
-        padding-top: 2rem;
-        margin-bottom: 5.4rem;
-      }
-    }
+  main .hero .hero-text .hero-btns button {
+    padding: 1.8rem 3rem;
   }
-  footer {
-    .main-footer {
-      padding: 5rem 8rem !important;
-      .footer-up {
-        div.footer-contents {
-          gap: 4rem;
-        }
-      }
-    }
+  section.cortes-menu div.cortes-menu-container h2.cortes-menu-title {
+    padding-top: 2rem;
+    margin-bottom: 5.4rem;
+  }
+  footer .main-footer {
+    padding: 5rem 8rem !important;
+  }
+  footer .main-footer .footer-up div.footer-contents {
+    gap: 4rem;
   }
 }
 @media (max-width: 1290px) {
@@ -37,280 +23,272 @@
     justify-content: space-between;
     padding: 1rem 6rem;
   }
-  main {
-    .hero {
-      padding: 0 6rem;
-      .hero-text {
-        .hero-btns {
-          gap: 2rem;
-          button {
-            padding-right: 2.5rem;
-            padding-left: 2.5rem;
-            font-size: 1.6rem;
-          }
-        }
-      }
-    }
+
+  main .hero {
+    padding: 0 6rem;
   }
+
+  main .hero .hero-text .hero-btns {
+    gap: 2rem;
+  }
+
+  main .hero .hero-text .hero-btns button {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    font-size: 1.6rem;
+  }
+
   .apresentation {
     flex-flow: column;
   }
-  footer {
-    div.main-footer {
-      padding: 5rem 6rem;
-      .footer-up {
-        flex-flow: column;
-        .footer-logo {
-          margin-bottom: 4rem;
-        }
-        div.footer-contents {
-          gap: 6rem;
-        }
-      }
-    }
+
+  footer .main-footer {
+    padding: 5rem 6rem;
+  }
+
+  footer .main-footer .footer-up {
+    flex-flow: column;
+  }
+
+  footer .main-footer .footer-up .footer-logo {
+    margin-bottom: 4rem;
+  }
+
+  footer .main-footer .footer-up div.footer-contents {
+    gap: 6rem;
   }
 }
 @media (max-width: 1150px) {
-  main {
-    .hero {
-      padding: 0 4rem;
-    }
+  .hero {
+    padding: 0 4rem;
   }
 }
 @media (max-width: 1081px) {
-  header {
-    nav {
-      display: none;
-    }
-    img.media-hidden {
-      display: block !important;
-      width: 3.8rem;
-      height: auto;
-    }
+  header nav {
+    display: none;
+  }
+  header img.media-hidden {
+    display: block !important;
+    width: 3.8rem;
+    height: auto;
   }
 
-  main {
-    .hero {
-      /* padding: 0 1.5rem; */
-      flex-flow: column-reverse;
-      justify-content: center;
-      align-items: center;
-      .hero-text {
-        justify-content: center;
-        align-items: center;
-        padding-top: 2rem;
-        text-align: center;
-        h1 {
-          font-size: 1.6rem;
-          font-weight: 400;
-        }
-        strong {
-          /* font-size: 3.2rem; */
-          text-align: center;
-        }
-        .hero-btns {
-          gap: 1.5rem;
-          button {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex: 1;
-          }
-        }
-      }
-      .hero-slider {
-        width: 100%;
-      }
-      .splide {
-        li {
-          max-height: 30rem;
-          img {
-            height: 28rem;
-          }
-          .splide__pagination__page {
-            display: none;
-          }
-        }
-      }
-    }
-    .hero-slider {
-      display: block;
-    }
+  main .hero {
+    /* padding: 0 1.5rem; */
+    flex-flow: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  main .hero .hero-text {
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    text-align: center;
+  }
+  main .hero .hero-text h1 {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+  main .hero .hero-text strong {
+    /* font-size: 3.2rem; */
+    text-align: center;
+  }
+  main .hero .hero-text .hero-btns {
+    gap: 1.5rem;
+  }
+  main .hero .hero-text .hero-btns button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  main .hero .hero-slider {
+    width: 100%;
+  }
+  main .hero .splide li {
+    max-height: 30rem;
+  }
+  main .hero .splide li img {
+    height: 28rem;
+  }
+  main .hero .splide li .splide__pagination__page {
+    display: none;
+  }
+  main .hero-slider {
+    display: block;
   }
   section.apresentation {
     flex-flow: column;
     padding: 20rem 1.5rem;
     gap: 4rem;
-    .apresentation-logo {
-      width: 30rem;
-    }
-    .apresentation-text {
-      p {
-        font-size: 1.6rem !important;
-      }
-    }
+  }
+  section.apresentation .apresentation-logo {
+    width: 30rem;
+  }
+  section.apresentation .apresentation-text p {
+    font-size: 1.6rem !important;
   }
   section.cortes-menu {
     padding: 0 0 15rem 0;
-    div.cortes-menu-container {
-      h2.cortes-menu-title {
-        font-size: 4.8rem;
-        padding-top: 6rem;
-        margin-bottom: 5.4rem;
-      }
-    }
-    .menu-selectors-container {
-      .linha-boutique,
-      .linha-novilho,
-      .linha-churrasco,
-      .linha-pampeira,
-      .linha-produtos {
-        justify-content: center;
+  }
+  section.cortes-menu > div > h2 {
+    font-size: 4.8rem;
+    padding-top: 6rem;
+    margin-bottom: 5.4rem;
+  }
+  .menu-selectors-container .linha-boutique,
+  .menu-selectors-container .linha-novilho,
+  .menu-selectors-container .linha-churrasco,
+  .menu-selectors-container .linha-pampeira,
+  .menu-selectors-container .linha-produtos {
+    justify-content: center;
+  }
 
-        &:hover {
-          background-position: center;
-        }
-        .menu-text {
-          padding: 8rem 1rem;
-          gap: 4rem;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
+  .menu-selectors-container .linha-boutique:hover,
+  .menu-selectors-container .linha-novilho:hover,
+  .menu-selectors-container .linha-churrasco:hover,
+  .menu-selectors-container .linha-pampeira:hover,
+  .menu-selectors-container .linha-produtos:hover {
+    background-position: center;
+  }
 
-          h2 {
-            font-size: 2.8rem;
-          }
-          p {
-            font-size: 1.4rem;
-            line-height: 1.6rem;
-            margin-top: -2rem;
-            padding-bottom: 0;
-          }
-        }
-      }
-    }
+  .menu-selectors-container .menu-text {
+    padding: 8rem 1rem;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .menu-selectors-container .menu-text h2 {
+    font-size: 2.8rem;
+  }
+
+  .menu-selectors-container .menu-text p {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+    margin-top: -2rem;
+    padding-bottom: 0;
   }
 
   section.lojas {
     padding: 0 1.5rem;
-    .lojas-title-container {
-      h2.lojas-title {
-        font-size: 4.4rem;
-      }
-    }
-    .lojas-content-container {
-      flex-flow: column;
-      padding-bottom: 10rem !important;
-      .lojas-map {
-        /* img {
-           max-width: 25rem;
-        } */
-        .loja-areas {
-          display: none;
-        }
-      }
-      .lojas-socials {
-        h3 {
-          text-align: center;
-          font-size: 2.8rem;
-        }
-        .lojas-lista {
-          a {
-            .dom-item-lista {
-              span {
-                font-size: 1.6rem;
-              }
-              .item-lista-content {
-                img {
-                  width: 2rem;
-                  height: 2rem;
-                }
-              }
-              img {
-                width: 1.2rem;
-                height: 1.2rem;
-              }
-            }
-          }
-        }
-      }
-    }
+  }
+  section.lojas .lojas-title-container h2.lojas-title {
+    font-size: 4.4rem;
+  }
+  section.lojas .lojas-content-container {
+    flex-flow: column;
+    padding-bottom: 10rem !important;
+  }
+  section.lojas .lojas-content-container .lojas-map .loja-areas {
+    display: none;
+  }
+  section.lojas .lojas-content-container .lojas-socials h3 {
+    text-align: center;
+    font-size: 2.8rem;
+  }
+  section.lojas
+    .lojas-content-container
+    .lojas-socials
+    .lojas-lista
+    a
+    .dom-item-lista
+    span {
+    font-size: 1.6rem;
+  }
+  section.lojas
+    .lojas-content-container
+    .lojas-socials
+    .lojas-lista
+    a
+    .dom-item-lista
+    .item-lista-content
+    img {
+    width: 2rem;
+    height: 2rem;
+  }
+  section.lojas
+    .lojas-content-container
+    .lojas-socials
+    .lojas-lista
+    a
+    .dom-item-lista
+    img {
+    width: 1.2rem;
+    height: 1.2rem;
   }
 
   section.about {
     gap: 5rem;
-    .nossa-historia,
-    .nossa-missao {
-      padding: 0 1.5rem;
-      gap: 2rem;
-      h3 {
-        font-size: 3.2rem;
-      }
-      p {
-        font-size: 1.4rem;
-      }
-      .nossa-historia-img,
-      .nossa-missao-img {
-        max-width: 100%;
-        max-height: 30rem;
-      }
-    }
-    .nossa-historia {
-      flex-flow: column;
-    }
-    .nossa-missao {
-      flex-flow: column-reverse;
-    }
   }
-  section.franqueados {
-    .franqueados-container {
-      padding: 5rem 2rem;
-      gap: 2rem;
-      h3 {
-        font-size: 2.8rem;
-        text-align: center;
-      }
-      p {
-        font-size: 1.4rem;
-      }
-    }
+  section.about .nossa-historia,
+  section.about .nossa-missao {
+    padding: 0 1.5rem;
+    gap: 2rem;
+  }
+  section.about .nossa-historia h3,
+  section.about .nossa-missao h3 {
+    font-size: 3.2rem;
+  }
+  section.about .nossa-historia p,
+  section.about .nossa-missao p {
+    font-size: 1.4rem;
+  }
+  section.about .nossa-historia-img,
+  section.about .nossa-missao-img {
+    max-width: 100%;
+    max-height: 30rem;
+  }
+  section.about .nossa-historia {
+    flex-flow: column;
+  }
+  section.about .nossa-missao {
+    flex-flow: column-reverse;
+  }
+  section.franqueados .franqueados-container {
+    padding: 5rem 2rem;
+    gap: 2rem;
+  }
+  section.franqueados .franqueados-container h3 {
+    font-size: 2.8rem;
+    text-align: center;
+  }
+  section.franqueados .franqueados-container p {
+    font-size: 1.4rem;
+  }
+  footer .main-footer {
+    padding: 1.5rem !important;
+    gap: 5rem;
   }
 
-  footer {
-    .main-footer {
-      padding: 1.5rem !important  ;
-      gap: 5rem;
-      div.footer-up {
-        flex-wrap: wrap;
-        flex-flow: column;
-        .footer-logo {
-          width: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin-bottom: 4rem;
-        }
-        .footer-contents {
-          flex-wrap: wrap;
-          /* display: flex; */
-          /* flex-flow: column; */
-          gap: 6rem;
-        }
-      }
-      div.footer-rights {
-        h4 {
-          font-size: 1.6rem;
-        }
-      }
-    }
+  footer .main-footer .footer-up {
+    flex-wrap: wrap;
+    flex-flow: column;
+  }
+
+  footer .main-footer .footer-up .footer-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  footer .main-footer .footer-up .footer-contents {
+    flex-wrap: wrap;
+    gap: 6rem;
+  }
+
+  footer .main-footer .footer-rights h4 {
+    font-size: 1.6rem;
   }
 }
-
 @media (max-width: 768px) {
   /* general */
 
   p {
-    font-size: 1.4rem ;
+    font-size: 1.4rem;
   }
   button {
     padding: 1.6rem 2.8rem !important;
@@ -575,6 +553,4 @@
 }
 
 @media (max-width: 500px) {
-
 }
-

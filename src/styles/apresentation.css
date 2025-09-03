@@ -1,23 +1,62 @@
-@import url("./style.css");
-
-section.apresentation {
+.apresentation {
   display: flex;
   justify-content: center;
   gap: 8rem;
   padding: 5rem 16rem 15rem 16rem;
   align-items: center;
   text-align: center;
-  
-  .apresentation-logo {
-    width: 53.6rem;
-  }
-  .apresentation-text {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+  opacity: 0;
+  animation: apresentationEnter 2s ease forwards;
+  animation-delay: 1s;
+}
 
-    p {
-      font-size: 3.6rem;
-    }
+.apresentation-logo {
+  width: 53.6rem;
+  filter: drop-shadow(0 0 0.6rem rgba(255, 255, 255, 0.2));
+}
+.apresentation-text {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.apresentation-text p {
+  filter: drop-shadow(0 0 0.6rem rgba(255, 255, 255, 0.2));
+  font-size: 3.6rem;
+}
+
+@keyframes apresentationEnter {
+  0% {
+    opacity: 0;
+  }
+  3% {
+    opacity: 0.8;
+  }
+  5% {
+    opacity: 0.2;
+  }
+  8% {
+    opacity: 0.8;
+  }
+  10% {
+    opacity: 0.2;
+  }
+  20% {
+    opacity: 0.8;
+  }
+  30% {
+    opacity: 0.2;
+  }
+
+  40% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 0.5;
+  }
+  85% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
   }
 }
