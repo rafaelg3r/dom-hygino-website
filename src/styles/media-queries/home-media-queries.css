@@ -142,11 +142,11 @@
     padding: 20rem 1.5rem;
     gap: 4rem;
     .apresentation-logo {
-      width: 30rem;
+      width: 45rem;
     }
     .apresentation-text {
       p {
-        font-size: 1.6rem !important;
+        font-size: 2.8rem;
       }
     }
   }
@@ -309,9 +309,6 @@
 @media (max-width: 768px) {
   /* general */
 
-  p {
-    font-size: 1.4rem ;
-  }
   button {
     padding: 1.6rem 2.8rem !important;
     font-size: 1.6rem !important;
@@ -368,11 +365,12 @@
           font-weight: 400;
         }
         strong {
-          font-size: 3.2rem;
+          font-size: 4.8rem;
           text-align: center;
         }
         p {
-          line-height: 1.6rem;
+          font-size: 2rem;
+          line-height: 2.2rem;
         }
         .hero-btns {
           flex-flow: column;
@@ -410,11 +408,11 @@
     padding: 20rem 1.5rem;
     gap: 4rem;
     .apresentation-logo {
-      width: 40rem;
+      width: 35rem;
     }
     .apresentation-text {
       p {
-        font-size: 1.6rem !important;
+        font-size: 2rem;
       }
     }
   }
@@ -422,7 +420,7 @@
     padding: 0 0 15rem 0;
     div.cortes-menu-container {
       h2.cortes-menu-title {
-        font-size: 4.8rem;
+        font-size: 5.6rem;
         padding-top: 6rem;
         margin-bottom: 5.4rem;
       }
@@ -449,8 +447,8 @@
             font-size: 2.8rem;
           }
           p {
-            font-size: 1.4rem;
-            line-height: 1.6rem;
+            font-size: 1.8rem;
+            line-height: 2rem;
             margin-top: -2rem;
             padding-bottom: 0;
           }
@@ -575,6 +573,28 @@
 }
 
 @media (max-width: 500px) {
-
+  main .hero .hero-text strong {
+    font-size: 3.8rem;
+    text-align: center;
+  }
+  main .hero .hero-text p {
+    font-size: 1.8rem;
+    line-height: 2rem;
+  }
+  section.apresentation .apresentation-logo {
+    width: 25rem;
+  }
+  section.apresentation .apresentation-text {
+    font-size: 1.8rem;
+  }
 }
-
+@media (max-width: 374px) {
+  main .hero .hero-text strong {
+    font-size: 3.4rem;
+    text-align: center;
+  }
+  main .hero .hero-text p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+  }
+}
