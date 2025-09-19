@@ -59,9 +59,10 @@ section.cortes-menu {
   background-position: 0 47%;
 }
 
-.linha-novilho,
-.linha-pampeira {
-  justify-content: end;
+.linha-novilho .menu-text,
+.linha-pampeira .menu-text {
+  align-items: end;
+  text-align: end;
 }
 
 .linha-boutique,
