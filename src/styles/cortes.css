@@ -35,7 +35,6 @@ section.cortes-menu {
   margin-bottom: 10rem;
 }
 
-
 .linha-boutique,
 .linha-novilho,
 .linha-churrasco,
@@ -59,10 +58,13 @@ section.cortes-menu {
   background-position: 0 47%;
 }
 
-.linha-novilho .menu-text,
-.linha-pampeira .menu-text {
-  align-items: end;
-  text-align: end;
+.linha-novilho,
+.linha-pampeira {
+  justify-content: end;
+  text-align: right;
+}
+.linha-novilho .menu-text {
+  align-items: flex-end;
 }
 
 .linha-boutique,
@@ -93,7 +95,7 @@ section.cortes-menu {
 
 .menu-text {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   padding: 8rem 12rem;
   transition: transform 0.3s ease-in-out;
 }
@@ -127,4 +129,3 @@ section.cortes-menu {
 .menu-text .right-btn:hover {
   transform: translate(-1rem, 0rem);
 }
-
