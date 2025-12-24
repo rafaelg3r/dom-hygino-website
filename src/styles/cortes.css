@@ -53,7 +53,7 @@ section.cortes-menu {
 .linha-novilho:hover,
 .linha-churrasco:hover,
 .linha-pampeira:hover {
-  filter: brightness(1.3);
+  background-blend-mode: hard-light;
 }
 
 .linha-novilho,
@@ -115,7 +115,8 @@ section.cortes-menu {
 }
 
 .menu-text button {
-  transition: transform 0.2s ease-in-out, filter 0.3s ease;
+  transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+  padding: 2rem 4rem;
 }
 
 .menu-text button:hover {

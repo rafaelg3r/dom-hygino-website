@@ -37,6 +37,10 @@
 }
 
 .border-btn {
-  border: 4px solid var(--pink-gray);
-  background-color: transparent !important;
+  border: 2px solid var(--pink-red-dark);
+  background-color: var(--pink-red-10) !important;
+  &:hover {
+    background-color: var(--pink-red-30) !important;
+    border: 2px solid var(--pink-red);
+  }
 }

@@ -33,11 +33,17 @@ section.franqueados .franqueados-container span {
 }
 
 section.franqueados .franqueados-container button {
-  transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.3s ease;
+  padding: 2rem 4rem;
+  border: none;
+  background-color: var(--pink-red-dark);
+  color: var(--white);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
 }
+
 
 section.franqueados .franqueados-container button:hover {
   transform: translate(0, -0.5rem);
   box-shadow: 0.4rem 0.4rem 2.4rem rgba(3, 1, 1, 0.3);
+  background-color: var(--pink-red);
 }
 

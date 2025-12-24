@@ -134,10 +134,9 @@ header {
       font-variant: small-caps;
       border-radius: 0.4rem;
       box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
-      transition: filter 0.1s ease;
 
       &:hover {
-        filter: brightness(1.4);
+      
       }
     }
   }

@@ -10,6 +10,9 @@
   --pink-gray: #2c2125;
   --dark-pink-gray: #161213;
   --pink-red: #e53344;
+  --pink-red-dark: #7f1c26;
+  --pink-red-30: rgba(229, 51, 68, 0.3);
+  --pink-red-10: rgba(229, 51, 68, 0.1);
 
   --roadstore-font: "Roadstore";
   --barlow-font: "Barlow";
@@ -58,23 +61,24 @@ a {
   cursor: pointer;
 }
 button {
-  cursor: pointer;
-  background-color: var(--pink-gray);
+  background-color: var(--pink-red-dark);
   color: var(--semi-white);
-  padding: 2rem 3rem;
-
-  font-family: var(--barlow-font);
-  font-size: 2rem;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-
   border: none;
-  border-radius: 0.2rem;
+  border-radius: 0.6rem;
+
+  text-transform: uppercase;
+  font-family: var(--barlow-font);
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 90%;
+
+  cursor: pointer;
   box-shadow: 0.4rem 0.4rem 1rem rgba(3, 1, 1, 0.4);
+
+  transition: background-color 0.2s ease;
 }
 button:hover {
-  filter: brightness(1.1);
+  background-color: var(--pink-red);
 }
 .hidden,
 .media-hidden {
