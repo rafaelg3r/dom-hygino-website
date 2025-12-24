@@ -573,19 +573,25 @@
 }
 
 @media (max-width: 500px) {
-  main .hero .hero-text strong {
-    font-size: 3.8rem;
-    text-align: center;
+  main {
+    overflow: hidden;
   }
+  main .hero-text h1 {
+    font-size: 5rem;
+  }
+  main .hero-btns {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
   main .hero .hero-text p {
     font-size: 1.8rem;
     line-height: 2rem;
   }
-  section.apresentation .apresentation-logo {
-    width: 25rem;
-  }
-  section.apresentation .apresentation-text {
-    font-size: 1.8rem;
+  .about .apresentation-logo {
+    width: 10rem;
+    height: 10rem;
   }
 }
 @media (max-width: 374px) {
