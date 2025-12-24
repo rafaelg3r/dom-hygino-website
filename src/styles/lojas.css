@@ -17,7 +17,6 @@
 .lojas-title {
   font-size: 7.2rem;
   font-weight: 400;
-  
 }
 
 .lojas-content-container {
@@ -97,6 +96,7 @@
 
 .lojas-lista a .dom-item-lista span {
   font-size: 2rem;
+  font-weight: 500;
 }
 
 .lojas-lista a .dom-item-lista:hover {

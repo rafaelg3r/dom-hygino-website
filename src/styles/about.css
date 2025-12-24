@@ -18,44 +18,34 @@ section.about p {
   font-weight: 400;
 }
 
-section.about .about-title {
+section.about .apresentation-logo {
+  width: max-content;
+  max-height: 33.8rem;
+}
+
+.about-title {
   display: flex;
   flex-flow: column;
   gap: 1rem;
   align-items: center;
 }
 
-section.about .about-title h2 {
+.about-title h2 {
   font-size: clamp(4rem, 3.54rem + 1.4286vw, 7.2rem);
   font-weight: 400;
 }
 
-section.about .about-title span {
+.about-title span {
   font-size: 2.4rem;
   font-weight: 400;
 }
 
-section.about .nossa-historia,
-section.about .nossa-missao {
+.nossa-historia {
   display: flex;
   align-items: top;
+  justify-content: space-between;
   padding: 0 12rem;
   gap: 6rem;
-}
-
-section.about .nossa-historia {
-  justify-content: start;
-}
-
-section.about .nossa-historia .nossa-historia-img {
-  max-width: 64.7rem;
-  height: 55rem;
-  width: 100%;
-  background-image: url("../assets/ijui-loja.jpg");
-  background-size: cover;
-  background-position: center;
-  border-radius: 0.4rem;
-  filter: brightness(0.8);
 }
 
 section.about .nossa-historia .nossa-historia-text {
@@ -64,7 +54,7 @@ section.about .nossa-historia .nossa-historia-text {
   justify-content: right;
   width: 100%;
   max-width: 65.3rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 section.about .nossa-missao {
@@ -75,11 +65,7 @@ section.about .nossa-missao .nossa-missao-img {
   max-width: 64.7rem;
   height: 55rem;
   width: 100%;
-  background-image: url("../assets/capao-loja.jpg");
-  background-size: cover;
-  background-position: bottom;
   border-radius: 0.4rem;
-  filter: brightness(0.8);
 }
 
 section.about .nossa-missao .nossa-missao-text {
@@ -95,4 +81,3 @@ section.more-about {
   display: flex;
   flex-flow: column;
 }
-

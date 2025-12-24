@@ -41,12 +41,15 @@ h2,
 h3 {
   font-family: "Roadstore";
 }
+h2 {
+  filter: drop-shadow(0 0.8rem 1rem rgba(255, 255, 255, 0.15));
+}
 a {
   text-decoration: none;
   color: var(--semi-white);
 }
 p {
-  font-size: clamp(1.4rem, 1.26rem + 0.4464vw 2.4rem) ;
+  font-size: clamp(1.4rem, 1.26rem + 0.4464vw 2.4rem);
 }
 span {
   font-family: var(--barlow-font);

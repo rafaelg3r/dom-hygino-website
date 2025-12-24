@@ -6,14 +6,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dom Hygino</title>
-    <link rel="icon" type="image/x-icon" href="/pin-dom-icon-no-bg.svg" />
-    <link
-      rel="shortcut icon"
-      href="/pin-dom-icon-no-bg.svg"
-      type="image/x-icon"
-    />
+    <link rel="icon" type="image/x-icon" href="/public/dom-icon.svg" />
 
-    <link rel="stylesheet" href="src/styles/style.css" />
+    <link rel="stylesheet" href="src/styles/general.css" />
+    <link rel="stylesheet" href="src/styles/header.css" />
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <link rel="stylesheet" href="src/styles/apresentation.css" />
+    <link rel="stylesheet" href="src/styles/cortes.css" />
+    <link rel="stylesheet" href="src/styles/lojas.css" />
+    <link rel="stylesheet" href="src/styles/about.css" />
+    <link rel="stylesheet" href="src/styles/franqueado.css" />
+    <link rel="stylesheet" href="src/styles/footer.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -99,7 +102,12 @@
           <a class="line-link" href="indisponivel.html">blog</a>
         </div>
         <div class="right-nav">
-          <a class="line-link" href="indisponivel.html">seja um franqueado</a>
+          <a
+            class="line-link"
+            href="https://wa.me/555599603419?text=Entre%20em%20contato%20com%20as%20lojas%20Dom%20Hygino!"
+            target="_blank"
+            >seja um franqueado</a
+          >
           <a href="https://linktr.ee/domhygino" target="_blank">
             <img
               class="instagram-icon"
@@ -108,7 +116,11 @@
               alt="Icone do instagram"
             />
           </a>
-          <a href="indisponivel.html"><button>Contato</button></a>
+          <a
+            href="https://wa.me/555599603419?text=Entre%20em%20contato%20com%20as%20lojas%20Dom%20Hygino!"
+            target="_blank"
+            ><button>Contato</button></a
+          >
         </div>
       </nav>
       <img
@@ -206,15 +218,36 @@
         alt="Background"
       />
     </main>
-    <section class="apresentation">
-      <img
-        class="apresentation-logo"
-        src="./src/assets/Dom-logo-white-big.png"
-        alt="Logo da loja de carnes Dom Hygino grande"
-      />
-      <div class="apresentation-text">
-        <p>Qualidade e sabor.</p>
-        <p>Churrasco de verdade é só com a Dom!</p>
+    <section id="about" class="about">
+      <div class="about-title">
+        <h2 class="silver-gradient-mid">Conheça a Dom</h2>
+        <span>Seu churrasco começa aqui.</span>
+      </div>
+      <div class="nossa-historia">
+        <div class="nossa-historia-text">
+          <p>
+            A Dom Hygino nasceu em Santa Rosa no Rio Grande do Sul com um
+            propósito claro: oferecer aos apaixonados por carne uma experiência
+            única e de alta qualidade.
+          </p>
+          <p>
+            Desde o início, a Dom se destacou por combinar tradição e cuidado na
+            escolha de carnes nobres, nacionais e importadas, criando um espaço
+            pensado para quem valoriza sabor, qualidade e experiência. Nosso
+            ambiente também é preparado para eventos exclusivos, proporcionando
+            momentos memoráveis aos nossos clientes.
+          </p>
+          <p>
+            A Dom Hygino é mais do que uma loja de carnes, é um espaço onde
+            paixão, qualidade e dedicação se encontram para transformar cada
+            corte em uma experiência única.
+          </p>
+        </div>
+        <img
+          class="apresentation-logo"
+          src="./src/assets/Dom-logo-white-big.png"
+          alt="Logo da loja de carnes Dom Hygino grande"
+        />
       </div>
     </section>
     <section id="cortes" class="cortes-menu">
@@ -255,13 +288,9 @@
             <h2 class="silver-gradient-right">linha novilho Jovem</h2>
             <p>
               A Linha Novilho Jovem traz cortes selecionados de animais
-              britânicos.
-              <!-- como Angus, Hereford e Brangus, com idade entre 24 e
-              36 meses.  
-              Garante maciez, suculência e sabor incomparável, sendo a -->
-              Escolha ideal tanto para o churrasco quanto para o dia a dia! É
-              uma linha versátil que une tradição e qualidade para
-              todos os momentos.
+              britânicos. Escolha ideal tanto para o churrasco quanto para o dia
+              a dia! É uma linha versátil que une tradição e qualidade para
+              todos os momentos.
             </p>
             <a onClick="setLinha('linhaNovilhoJovem')" href="menu.html"
               ><button class="right-btn">--- Acessar Linha ---</button></a
@@ -289,7 +318,7 @@
               A Linha Pampeira é a escolha perfeita para o dia a dia, unindo
               sabor e economia sem abrir mão da qualidade. Oferece cortes
               economy, ideais para refeições práticas e acessíveis, mantendo o
-              verdadeiro gosto da carne bem preparada.
+              verdadeiro gosto da carne bem preparada.
             </p>
             <a onClick="setLinha('linhaPampeira')" href="menu.html"
               ><button class="right-btn">--- Acessar Linha ---</button></a
@@ -297,7 +326,7 @@
           </div>
         </div>
 
-        <div class="linha-produtos">
+        <!-- <div class="linha-produtos">
           <div class="menu-text">
             <h2 class="silver-gradient-left">Produtos</h2>
             <p>
@@ -305,12 +334,12 @@
               de acompanhamentos, temperos e itens gourmet que elevam o sabor do
               seu churrasco. Perfeitos para complementar carnes e transformar
               cada preparo em uma experiência única!
-            </p>
+            </p>  
             <a onClick="setLinha('linhaProdutos')" href="menu.html"
               ><button>--- Acessar Produtos ---</button></a
             >
           </div>
-        </div>
+        </div> -->
       </div>
       <picture>
         <source
@@ -391,7 +420,7 @@
                     src="./src/assets/instagram.svg"
                     alt="logo do instagram"
                   />
-                  <span>DOMHYGINO</span>
+                  <span>Dom Hygino Santa Rosa</span>
                 </div>
                 <img
                   src="./src/assets/seta-diagonal.svg"
@@ -406,7 +435,7 @@
               <div class="dom-item-lista dom-caixias-do-sul">
                 <div class="item-lista-content">
                   <img src="./src/assets/instagram.svg" alt="" />
-                  <span>DOMHYGINOCAIXIASDOSUL</span>
+                  <span>Dom Hygino Caxias do Sul</span>
                 </div>
                 <img
                   src="./src/assets/seta-diagonal.svg"
@@ -418,7 +447,7 @@
               <div class="dom-item-lista">
                 <div class="item-lista-content">
                   <img src="./src/assets/instagram.svg" alt="" />
-                  <span>DOM_HYGINO_CAPAO</span>
+                  <span>Dom Hygino Capão Da Canoa</span>
                 </div>
                 <img
                   src="./src/assets/seta-diagonal.svg"
@@ -433,7 +462,7 @@
               <div class="dom-item-lista">
                 <div class="item-lista-content">
                   <img src="./src/assets/instagram.svg" alt="" />
-                  <span> DOMHYGINO_HORIZONTINA </span>
+                  <span> Dom Hygino Horizontina </span>
                 </div>
                 <img
                   src="./src/assets/seta-diagonal.svg"
@@ -445,7 +474,7 @@
               <div class="dom-item-lista dom-5">
                 <div class="item-lista-content">
                   <img src="./src/assets/instagram.svg" alt="" />
-                  <span>DOMHYGINOIJUI</span>
+                  <span>Dom Hygino Ijuí</span>
                 </div>
                 <img
                   src="./src/assets/seta-diagonal.svg"
@@ -460,7 +489,7 @@
               <div class="dom-item-lista dom-6">
                 <div class="item-lista-content">
                   <img src="./src/assets/instagram.svg" alt="" />
-                  <span>DOMHYGINO_JARAGUA</span>
+                  <span>Dom Hygino Jaraguá do Sul</span>
                 </div>
                 <img
                   src="./src/assets/seta-diagonal.svg"
@@ -472,7 +501,7 @@
               <div class="dom-item-lista dom-7">
                 <div class="item-lista-content">
                   <img src="./src/assets/instagram.svg" alt="" />
-                  <span>DOMHYGINO_POA</span>
+                  <span>Dom Hygino Porto Alegre</span>
                 </div>
                 <img
                   src="./src/assets/seta-diagonal.svg"
@@ -487,7 +516,7 @@
               <div class="dom-item-lista dom-8">
                 <div class="item-lista-content">
                   <img src="./src/assets/instagram.svg" alt="" />
-                  <span>DOMHYGINOTORRES</span>
+                  <span>Dom Hygino Torres</span>
                 </div>
                 <img
                   src="./src/assets/seta-diagonal.svg"
@@ -499,60 +528,7 @@
         </div>
       </div>
     </section>
-    <section id="about" class="about">
-      <div class="about-title">
-        <h2 class="silver-gradient-mid">Conheça a Dom</h2>
-        <span>Seu churrasco começa aqui.</span>
-      </div>
-      <div class="nossa-historia">
-        <div class="nossa-historia-img"></div>
-        <div class="nossa-historia-text">
-          <h3 class="silver-gradient-right">Nossa História</h3>
-          <p>
-            A Dom Hygino nasceu em Santa Rosa no Rio Grande do Sul com um
-            propósito claro: oferecer aos apaixonados por carne uma experiência
-            única e de alta qualidade.
-          </p>
-          <p>
-            Desde o início, a Dom se destacou por combinar tradição e cuidado na
-            escolha de carnes nobres, nacionais e importadas, criando um espaço
-            pensado para quem valoriza sabor, qualidade e experiência. Nosso
-            ambiente também é preparado para eventos exclusivos, proporcionando
-            momentos memoráveis aos nossos clientes.
-          </p>
-          <p>
-            A Dom Hygino é mais do que uma loja de carnes — é um espaço onde
-            paixão, qualidade e dedicação se encontram para transformar cada
-            corte em uma experiência única.
-          </p>
-        </div>
-      </div>
 
-      <div class="nossa-missao">
-        <div class="nossa-missao-text">
-          <h3 class="silver-gradient-left">A missão da Dom</h3>
-          <p>
-            Na Dom, nossa missão é oferecer cortes de carne de excelência e
-            produtos gourmet selecionados, proporcionando uma experiência única
-            para quem valoriza qualidade, sabor e tradição. Buscamos transformar
-            cada visita em um momento especial, combinando atendimento
-            personalizado, produtos cuidadosamente escolhidos e um ambiente que
-            reflete nosso compromisso com a satisfação de nossos clientes. Nosso
-            objetivo é ser referência em carnes nobres, levando a paixão pela
-            gastronomia de qualidade a cada corte, em cada evento e em cada nova
-            unidade da Dom Hygino.
-          </p>
-        </div>
-        <div class="nossa-missao-img"></div>
-      </div>
-    </section>
-    <section class="more-about">
-      <div class="more-about-title">
-        <h2></h2>
-        <p></p>
-      </div>
-      <div class="video"></div>
-    </section>
     <section id="franqueado" class="franqueados">
       <div class="franqueados-container">
         <h3 class="silver-gradient-mid">
@@ -566,7 +542,10 @@
           inabalável com o sabor e a experiência do cliente. E agora, você pode
           fazer parte dessa história de sucesso!
         </p>
-        <a href="indisponivel.html"><button>marcar uma reunião</button></a>
+        <a
+          href="https://wa.me/555599603419?text=Entre%20em%20contato%20com%20as%20lojas%20Dom%20Hygino!"
+          ><button>marcar uma reunião</button></a
+        >
       </div>
     </section>
     <footer>
@@ -588,14 +567,7 @@
               <a href="#about">Sobre</a>
               <a href="indisponivel.html">Blog</a>
             </div>
-            <div class="footer-text">
-              <h4>Sobre</h4>
-              <a href="indisponivel.html"
-                >Políticas de <br />
-                privacidade</a
-              >
-              <a href="indisponivel.html">Termos de uso</a>
-            </div>
+
             <div class="footer-text">
               <h4>Contato</h4>
               <span href="">(55) 99733-4022</span>

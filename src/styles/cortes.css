@@ -38,8 +38,7 @@ section.cortes-menu {
 .linha-boutique,
 .linha-novilho,
 .linha-churrasco,
-.linha-pampeira,
-.linha-produtos {
+.linha-pampeira {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -47,15 +46,14 @@ section.cortes-menu {
   background-position: center;
   background-repeat: no-repeat;
   box-shadow: inset 0 2.4rem 3rem rgba(0, 0, 0, 0.7);
-  transition: background-position 0.4s ease;
+  transition: filter 0.4s ease;
 }
 
 .linha-boutique:hover,
 .linha-novilho:hover,
 .linha-churrasco:hover,
-.linha-pampeira:hover,
-.linha-produtos:hover {
-  background-position: 0 47%;
+.linha-pampeira:hover {
+  filter: brightness(1.3);
 }
 
 .linha-novilho,
@@ -63,13 +61,13 @@ section.cortes-menu {
   justify-content: end;
   text-align: right;
 }
-.linha-novilho .menu-text {
+.linha-novilho .menu-text,
+.linha-pampeira .menu-text {
   align-items: flex-end;
 }
 
 .linha-boutique,
-.linha-churrasco,
-.linha-produtos {
+.linha-churrasco {
   justify-content: start;
 }
 
@@ -87,10 +85,8 @@ section.cortes-menu {
 
 .linha-pampeira {
   background-image: url("../assets/cortes/pampeira-image-bg.png");
-}
-
-.linha-produtos {
-  background-image: url("../assets/cortes/produtos-image-bg.png");
+  box-shadow: inset 0 2.4rem 3rem rgba(0, 0, 0, 0.7),
+    inset 0 -2.4rem 3rem rgba(0, 0, 0, 0.7);
 }
 
 .menu-text {
